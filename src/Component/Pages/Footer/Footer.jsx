@@ -7,92 +7,62 @@ import sendd from "../../../Images/carbon_send.svg";
 
 const Footer = () => {
   return (
-    <footer className=" text-white py-5 px-3">
+    <footer className="text-white py-5 px-3">
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
-            <div className="d-flex align-items-center mb-3">
-              <img
-                src={logo}
-                alt="ALFARES Logo"
-                className="me-2"
-                width="50"
-                height="50"
-              />
+          <div className="col-lg-4 col-md-6 col-sm-12 text-center text-md-start">
+            <div className="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+              <img src={logo} alt="ALFARES Logo" className="me-2" width="50" height="50" />
               <h5 className="mb-0">
                 Marketing <br />
                 Agency
               </h5>
             </div>
-            <br />
 
-            <p className="text-white" style={{marginRight:"120px"}}>
+            <p className="text-white">
               Marketing is the key to success. <br />
-              Understand your customers, <br />
-              show your value, and build lasting loyalty.
+              Understand your customers, show your value, and build lasting loyalty.
             </p>
-            <div className="d-flex gap-5" style={{ marginLeft: "90px" }}>
-              <img
-                src={insta}
-                alt="Instagram"
-                className=""
-                width="24"
-                height="24"
-              />
-              <img
-                src={fasebook}
-                alt="Facebook"
-                className=""
-                width="24"
-                height="24"
-              />
-              <img
-                src={twater}
-                alt="Twitter"
-                className=""
-                width="24"
-                height="24"
-              />
+
+            <div className="d-flex gap-4 justify-content-center justify-content-md-start">
+              <img src={insta} alt="Instagram" width="24" height="24" />
+              <img src={fasebook} alt="Facebook" width="24" height="24" />
+              <img src={twater} alt="Twitter" width="24" height="24" />
             </div>
           </div>
-          <div className="col-md-2">
+
+          <div className="col-lg-2 col-md-6 col-sm-12 mt-4 mt-md-0">
             <h6>About</h6>
             <br />
-
             <ul className="list-unstyled text-white">
               <li>About Us</li>
               <br />
-
               <li>Features</li>
               <br />
-
               <li>News</li>
               <br />
-
               <li>Menu</li>
+              <br />
             </ul>
           </div>
-          <div className="col-md-2">
+
+          <div className="col-lg-2 col-md-6 col-sm-12 mt-4 mt-lg-0">
             <h6>Company</h6>
             <br />
-
             <ul className="list-unstyled text-white">
               <li>Why Fudo?</li>
               <br />
-
               <li>Partner With Us</li>
               <br />
-
               <li>FAQ</li>
               <br />
-
               <li>Blog</li>
             </ul>
           </div>
-          <div className="col-md-2">
+
+          <div className="col-lg-2 col-md-6 col-sm-12 mt-4 mt-lg-0">
             <h6>Support</h6>
             <br />
-
             <ul className="list-unstyled text-white">
               <li>Account</li>
               <br />
@@ -100,35 +70,33 @@ const Footer = () => {
               <br />
               <li>Feedback</li>
               <br />
-
               <li>Contact Us</li>
               <br />
-
               <li>Accessibility</li>
             </ul>
           </div>
-          <div className="col-md-2">
+
+          <div className="col-lg-2 col-md-6 col-sm-12 mt-4 mt-lg-0">
             <h6>Get in Touch</h6>
             <br />
-
             <p className="text-white">
-              Question or feedback?
-              <br />
+              Question or feedback? <br />
               <br />
               We'd love to hear from you.
             </p>
             <div
-              className="d-flex align-items-center px-3 py-2"
-              style={{ border: "2px #D9D9D933 solid", borderRadius: "20px" }}
-            >
-              <span
-                className="text fw-bold me-2 p-2"
-                style={{ color: "#D9D9D9" }}
-              >
-                Send Email
-              </span>
-              <img src={sendd} alt="Send" width="20" height="20" />
-            </div>
+  className="d-flex align-items-center justify-content-center justify-content-md-start px-3 py-2"
+  style={{ border: "2px #D9D9D933 solid", borderRadius: "20px" }}
+>
+  <input
+    type="email"
+    placeholder="Send Enail"
+    className="border-0 bg-transparent text-white fw-bold me-2 p-2 w-100"
+    style={{ outline: "none" }}
+  />
+  <img src={sendd} alt="Send" width="20" height="20" />
+</div>
+
           </div>
         </div>
       </div>

@@ -323,18 +323,21 @@ input::placeholder {
 /*Sectioneplan*/
 @media (max-width: 992px) {
   h2 {
+    margin-top: 15px !important;
     font-size: 50px !important;
   }
 }
 
 @media (max-width: 768px) {
   h2 {
+    margin-top: 15px !important;
     font-size: 40px !important;
   }
 }
 
 @media (max-width: 576px) {
   h2 {
+    margin-top: 15px !important;
     font-size: 35px !important;
   }
 }
