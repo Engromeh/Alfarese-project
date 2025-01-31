@@ -1,13 +1,15 @@
 import React from "react";
 import { Container, Row, Col, Form, Button, Dropdown } from "react-bootstrap";
 import plan from "../../../Images/Group 168.svg";
-import './ContactForm.css'
 
 const ContactForm = () => {
   return (
     <Container fluid className="p-4" style={{ color: "white" }}>
       <Row>
-        <Col md={6} className="d-flex align-items-center justify-content-center">
+        <Col
+          md={6}
+          className="d-flex align-items-center justify-content-center"
+        >
           <img src={plan} alt="خريطة" className="img-fluid" />
         </Col>
 

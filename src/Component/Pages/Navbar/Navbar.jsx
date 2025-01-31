@@ -1,48 +1,72 @@
-import './Navbar.css'
-import logoe from '../../../Images/alfares_headar_logo 1.png'
+import logoe from "../../../Images/alfares_headar_logo 1.png";
 const Navbar = () => {
   return (
     <>
-         <nav className="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <img src={logoe} alt="Logo" className="navbar-logo" />
-        </a>
+      <nav className="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <img src={logoe} alt="Logo" className="navbar-logo" />
+          </a>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav mx-auto d-flex justify-content-center w-100">
-            <li className="nav-item"><a className="nav-link" href="#">المقالات</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">الخدمات</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">اعمالنا</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">تواصل معنا</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">احصل على عرض السعر</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">الرئيسية</a></li>
-          </ul>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav mx-auto d-flex justify-content-center w-100">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  المقالات
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  الخدمات
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  اعمالنا
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  تواصل معنا
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  احصل على عرض السعر
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  الرئيسية
+                </a>
+              </li>
+            </ul>
 
-          <div className="logines-container ms-auto flex items-center justify-center text-center">
-  <a href="#" className="login-btn px-4 py-2 bg-blue-500 text-white rounded-md">
-    تسجيل دخول
-  </a>
-</div>
-
+            <div className="logines-container ms-auto flex items-center justify-center text-center">
+              <a
+                href="#"
+                className="login-btn px-4 py-2 bg-blue-500 text-white rounded-md"
+              >
+                تسجيل دخول
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

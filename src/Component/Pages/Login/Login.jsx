@@ -1,4 +1,3 @@
-import "./Login.css";
 import { Link } from "react-router-dom";
 import loginlogo from "../../../Images/alfares_headar_logo 1.png";
 import userIcon from "../../../Images/user.svg";
