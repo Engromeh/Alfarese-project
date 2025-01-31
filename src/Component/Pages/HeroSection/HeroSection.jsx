@@ -43,25 +43,25 @@ const HeroSection = () => {
 
           <div className="row mt-5">
             <div className="col-md-4">
-              <div className="card ">
+             
                 <img
                   src={group1}
                   className="card-img-top"
                   alt="التسويق الرقمي"
                 />
-              </div>
+             
             </div>
             <div className="col-md-4">
-              <div className="card ">
+            
                 <img
                   src={group3}
                   className="card-img-top"
                   alt="استراتيجية التسويق"
                 />
-              </div>
+             
             </div>
             <div className="col-md-4">
-              <div className="card ">
+    
                 <img
                   src={group2}
                   className="card-img-top"
@@ -70,7 +70,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-        </div>
+  
       </section>
     </>
   );

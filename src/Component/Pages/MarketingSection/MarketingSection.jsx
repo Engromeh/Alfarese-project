@@ -4,7 +4,7 @@ const MarketingSection = () => {
     <section className="container-fluid  text-light py-5 px-4">
       <div className="row align-items-center">
         <div className="col-md-6">
-          <h2 className="fw-bold">جعل التسويق أكثر من مجرد أداة ترويجية.</h2>
+          <h2 className="fw-bold" style={{direction:"rtl"}}>جعل التسويق أكثر من مجرد أداة ترويجية.</h2>
           <p className="mt-3">
             التسويق ليس مجرد وسيلة للترويج، بل هو فن بناء العلاقات وصناعة
             التأثير. نحن نؤمن أن النجاح يبدأ بفهم العميل، وإيصال الهوية الحقيقية

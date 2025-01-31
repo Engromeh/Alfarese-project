@@ -1,71 +1,138 @@
 import React from "react";
 import logo from "../../../Images/alfares_headar_logo 1.png";
+import fasebook from "../../../Images/bx_bxl-facebook.svg";
+import insta from "../../../Images/bx_bxl-instagram-alt.svg";
+import twater from "../../../Images/akar-icons_twitter-fill.svg";
+import sendd from "../../../Images/carbon_send.svg";
+
 const Footer = () => {
   return (
-    <>
-      <footer className=" text-white py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3 text-end">
-              <div className="d-flex align-items-center justify-content-end">
-                <img src={logo} alt="لوجو" className="ms-3" width="50" />
-                <h5 className="m-0">Marketing Agency</h5>
-              </div>
-              <p className="mt-3">
-                {" "}
-                Marketing is the key to success. Understand your customers, show
-                your value, and build lasting loyalty.
-              </p>
-              <div className="d-flex justify-content-end gap-2">
-                <i className="bi bi-facebook fs-4"></i>
-                <i className="bi bi-instagram fs-4"></i>
-                <i className="bi bi-twitter fs-4"></i>
-                <i className="bi bi-linkedin fs-4"></i>
-              </div>
+    <footer className=" text-white py-5 px-3">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="d-flex align-items-center mb-3">
+              <img
+                src={logo}
+                alt="ALFARES Logo"
+                className="me-2"
+                width="50"
+                height="50"
+              />
+              <h5 className="mb-0">
+                Marketing <br />
+                Agency
+              </h5>
             </div>
-            <div className="col-md-2 text-end">
-              <h5>About</h5>
-              <ul className="list-unstyled">
-                <li>About Us</li>
-                <li>Features</li>
-                <li>News</li>
-                <li>Menu</li>
-              </ul>
+            <br />
+
+            <p className="text-white" style={{marginRight:"120px"}}>
+              Marketing is the key to success. <br />
+              Understand your customers, <br />
+              show your value, and build lasting loyalty.
+            </p>
+            <div className="d-flex gap-5" style={{ marginLeft: "90px" }}>
+              <img
+                src={insta}
+                alt="Instagram"
+                className=""
+                width="24"
+                height="24"
+              />
+              <img
+                src={fasebook}
+                alt="Facebook"
+                className=""
+                width="24"
+                height="24"
+              />
+              <img
+                src={twater}
+                alt="Twitter"
+                className=""
+                width="24"
+                height="24"
+              />
             </div>
-            <div className="col-md-2 text-end">
-              <h5>Company</h5>
-              <ul className="list-unstyled">
-                <li>Why Fudo?</li>
-                <li>Partner With Us</li>
-                <li>FAQ</li>
-                <li>Blog</li>
-              </ul>
-            </div>
-            <div className="col-md-2 text-end">
-              <h5>Support</h5>{" "}
-              <ul className="list-unstyled">
-                <li>Account</li>
-                <li>Support Center</li>
-                <li>Reviewed nutrition</li>
-                <li>Contact Us</li>
-                <li>Accessibility</li>
-              </ul>
-            </div>
-            <div className="col-md-3 text-end">
-              <h5>Get in Touch</h5>
-              <p>Question or feedback? We'd love to hear from you.</p>
-              <div className="input-group">
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Email Addres"
-                />
-              </div>
+          </div>
+          <div className="col-md-2">
+            <h6>About</h6>
+            <br />
+
+            <ul className="list-unstyled text-white">
+              <li>About Us</li>
+              <br />
+
+              <li>Features</li>
+              <br />
+
+              <li>News</li>
+              <br />
+
+              <li>Menu</li>
+            </ul>
+          </div>
+          <div className="col-md-2">
+            <h6>Company</h6>
+            <br />
+
+            <ul className="list-unstyled text-white">
+              <li>Why Fudo?</li>
+              <br />
+
+              <li>Partner With Us</li>
+              <br />
+
+              <li>FAQ</li>
+              <br />
+
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div className="col-md-2">
+            <h6>Support</h6>
+            <br />
+
+            <ul className="list-unstyled text-white">
+              <li>Account</li>
+              <br />
+              <li>Support Center</li>
+              <br />
+              <li>Feedback</li>
+              <br />
+
+              <li>Contact Us</li>
+              <br />
+
+              <li>Accessibility</li>
+            </ul>
+          </div>
+          <div className="col-md-2">
+            <h6>Get in Touch</h6>
+            <br />
+
+            <p className="text-white">
+              Question or feedback?
+              <br />
+              <br />
+              We'd love to hear from you.
+            </p>
+            <div
+              className="d-flex align-items-center px-3 py-2"
+              style={{ border: "2px #D9D9D933 solid", borderRadius: "20px" }}
+            >
+              <span
+                className="text fw-bold me-2 p-2"
+                style={{ color: "#D9D9D9" }}
+              >
+                Send Email
+              </span>
+              <img src={sendd} alt="Send" width="20" height="20" />
             </div>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 
