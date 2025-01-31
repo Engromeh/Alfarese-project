@@ -2,7 +2,7 @@
 const Payment = () => {
   return (
     <>
-      <div className="bg-secondary py-3">
+      <div className=" py-3">
         <div className="d-flex flex-wrap justify-content-center gap-4">
           <img src="/logos/orange-money.png" alt="Orange Money" height="40" />
           <img src="/logos/we-pay.png" alt="We Pay" height="40" />

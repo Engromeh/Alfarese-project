@@ -1,15 +1,10 @@
-/* .custom-navbar {
-    background-image: ; 
-  background-size: cover; 
-  background-position: center ;
-    padding: 10px 20px;
-  } */
+
   .custom-navbar {
-    background-color: url('../../../Images/bg.svg') transparent; /* خلفية شفافة */
+    background-color: url('../../../Images/bg.svg') transparent; 
     padding: 10px 20px;
     position: fixed; /* لجعل النافبار ثابتًا في الأعلى */
     width: 100%;
-    z-index: 1000; /* تأكد من أن النافبار فوق أي عناصر أخرى */
+    z-index: 1000; 
   }
   
   
@@ -41,13 +36,13 @@
   
   .login-btn {
     padding: 8px 16px;
-    border: 2px solid white;
+    border: 2px solid rgb(243, 185, 14);
     border-radius: 6px;
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: 0.3s;
-    display: inline-block;
+    /* display: inline-block; */
   }
   
   .login-btn:hover {

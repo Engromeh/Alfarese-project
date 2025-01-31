@@ -1,5 +1,6 @@
 
 import './App.css'
+import ContactForm from './Component/Pages/ContactForm/ContactForm'
 import Footer from './Component/Pages/Footer/Footer'
 import HeroSection from './Component/Pages/HeroSection/HeroSection'
 import Improve from './Component/Pages/Improve/Improve'
@@ -20,6 +21,7 @@ function App() {
  <Improve />
  <Servres />
  <Sectioneplan />
+ <ContactForm />
         <Footer />
     </>
   )

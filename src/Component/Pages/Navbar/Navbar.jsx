@@ -31,7 +31,7 @@ const Navbar = () => {
             <li className="nav-item"><a className="nav-link" href="#">الرئيسية</a></li>
           </ul>
 
-          <div className="login-container ms-auto d-lg-block text-lg-end text-center">
+          <div className="login-container ms-auto   text-center">
             <a href="#" className="login-btn">تسجيل دخول</a>
           </div>
         </div>
