@@ -51,14 +51,14 @@
   }
   
   @media (min-width: 992px) {
-    .login-container {
+    .logines-container {
       display: flex;
       justify-content: flex-end;
     }
   }
   
   @media (max-width: 991px) {
-    .login-container {
+    .logines-container {
       text-align: center;
       width: 100%;
     }

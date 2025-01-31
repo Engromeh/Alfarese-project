@@ -31,9 +31,12 @@ const Navbar = () => {
             <li className="nav-item"><a className="nav-link" href="#">الرئيسية</a></li>
           </ul>
 
-          <div className="login-container ms-auto   text-center">
-            <a href="#" className="login-btn">تسجيل دخول</a>
-          </div>
+          <div className="logines-container ms-auto flex items-center justify-center text-center">
+  <a href="#" className="login-btn px-4 py-2 bg-blue-500 text-white rounded-md">
+    تسجيل دخول
+  </a>
+</div>
+
         </div>
       </div>
     </nav>

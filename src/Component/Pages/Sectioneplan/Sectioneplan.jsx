@@ -13,17 +13,17 @@ const Sectioneplan = () => {
           />
         </div>
         <div className="col-md-6 text-end">
-          <h2 className="fw-bold" style={{fontSize:"65px"}}>أحدث ما في مدونتنا بمكانك زيارته</h2>
+          <h2  style={{fontSize:"65px" , fontWeight:"bold"}}>أحدث ما في مدونتنا بمكانك زيارته</h2>
         
           <p className="text-white ">قم بتحديث أحدث الأخبار ومتابعة حول عالم التسويق الرقمي حديثنا لإفادة مشروعك</p>
           <ul className="list-unstyled">
             <li className="mb-3">
-              <h5 className="fw-bold">01 أبحاث السوق</h5>
+              <h5  style={{fontWeight:"bold"}}>01 أبحاث السوق</h5>
               <p>نشاط جمع البيانات المتعلقة بمستهلكي السوق المستهدفة</p>
             </li>
             <br />
             <li className="mb-3">
-              <h5 className="fw-bold">02 جمع البيانات</h5>
+              <h5 style={{fontWeight:"bold"}}>02 جمع البيانات</h5>
               <p>ومن المتوقع أن تزيد المبيعات وأن تتحسن الأعمال</p>
             </li>
             <li>

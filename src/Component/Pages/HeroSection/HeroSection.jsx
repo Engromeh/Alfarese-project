@@ -1,7 +1,7 @@
 import group1 from "../../../Images/Mask group (1).png"
 import group2 from "../../../Images/Mask group (2).png"
 import group3 from "../../../Images/Mask group.png"
-
+import videoIcon from  "../../../Images/Ellipse 1.svg"
 const HeroSection= () => {
   return (
     <>
@@ -13,9 +13,27 @@ const HeroSection= () => {
           ابدأ اليوم واجعل أفكارك تصل لعملائك بفعالية.
         </p>
         <div className="d-flex justify-content-center gap-3 mt-4">
-          <a href="#" className="btn btn-primary custom-btn">ابدأ الآن</a>
-          <a href="#" className="btn btn-outline-light custom-btn"><i className="bi bi-play-circle"></i> فيديو تعريفي</a>
-        </div>
+        <span
+  className="custom-btn"
+  style={{
+    backgroundColor: "#F4CFAB",
+    borderRadius: "16px",
+    padding: "8px 16px",
+    display: "inline-block",
+    textAlign: "center",
+    fontWeight: "bold",
+    minWidth: "100px",
+  }}
+>
+  ابدأ الآن
+</span>          <p className="custom-btn fw-bold d-flex align-items-center" style={{ color: "white", fontSize: "20px" }}>
+      <img
+        src={videoIcon}
+        alt="Video Icon"
+        style={{ width: "25px", height: "25px", marginLeft: "8px" }}
+      />
+      فيديو تعريفي
+    </p>        </div>
         
         <div className="row mt-5">
           <div className="col-md-4">

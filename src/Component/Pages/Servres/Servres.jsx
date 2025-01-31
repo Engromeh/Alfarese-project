@@ -26,12 +26,21 @@ const Servres = () => {
     <div className="container text-center text-white py-5">
       <h1 className="fw-bold">الخدمات</h1>
       <Carousel
-        indicators={false}
-        controls={true}
-        className="my-4"
-        prevIcon={<FaChevronLeft size={30} color="#C4A77D" />}
-        nextIcon={<FaChevronRight size={30} color="#C4A77D" />}
-      >
+  indicators={false}
+  controls={true}
+  className="my-4"
+  prevIcon={
+    <div style={{ position: "absolute", right: "100%" }}>
+      <FaChevronLeft size={30} color="#C4A77D" />
+    </div>
+  }
+  nextIcon={
+    <div style={{ position: "absolute", left: "100%" }}>
+      <FaChevronRight size={30} color="#C4A77D" />
+    </div>
+  }
+>
+
         {groupedServices.map((group, idx) => (
           <Carousel.Item key={idx}>
             <div className="row justify-content-center">

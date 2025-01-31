@@ -1,28 +1,24 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import ContactForm from './Component/Pages/ContactForm/ContactForm'
-import Footer from './Component/Pages/Footer/Footer'
-import HeroSection from './Component/Pages/HeroSection/HeroSection'
-import Improve from './Component/Pages/Improve/Improve'
-import MarketingSection from './Component/Pages/MarketingSection/MarketingSection'
-import Navbar from './Component/Pages/Navbar/Navbar'
-import Payment from './Component/Pages/Payment/Payment'
-import Sectioneplan from './Component/Pages/Sectioneplan/Sectioneplan'
-import Servres from './Component/Pages/Servres/Servres'
+import Home from './Component/Home/Home'
+import Login from './Component/Pages/Login/Login'
+import Singup from './Component/Pages/Singup/Singup'
+
 
 function App() {
 
   return (
     <>
- <Navbar />
- <HeroSection/>
- <Payment />
- <MarketingSection />
- <Improve />
- <Servres />
- <Sectioneplan />
- <ContactForm />
-        <Footer />
+
+<Routes>
+  <Route path='/' element={<Home />} />
+  <Route path='/login' element={<Login />} />
+  <Route path='/singup' element={<Singup/>} />
+
+
+
+</Routes>
     </>
   )
 }

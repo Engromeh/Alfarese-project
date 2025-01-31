@@ -1,0 +1,80 @@
+.pricing-container {
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+  }
+  
+  .pricing-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .pricing-subtitle {
+    font-size: 16px;
+    color: #b0b0b0;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .toggle-btn {
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 8px 20px;
+  }
+  
+  .toggle-btn.active {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .pricing-card {
+    background-color: #202130 !important;
+    color: white !important;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    height: 100% !important;
+  }
+  
+  .pricing-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .featured {
+    background: linear-gradient(135deg   , #F4CFAB4D, #7373734D );
+  }
+  
+  .plan-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .plan-price {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .plan-duration {
+    font-size: 14px;
+    color:  #fff;
+  }
+  
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .plan-features li {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  

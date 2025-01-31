@@ -1,0 +1,18 @@
+/* ضبط المحاذاة للنصوص */
+.text-end {
+    text-align: right;
+  }
+  
+  .profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: -10px; 
+    border: 2px solid #121219; 
+  }
+  
+
+  .customes-button img {
+    width: 50px;
+  }
+  
