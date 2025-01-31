@@ -1,0 +1,58 @@
+.hero {
+    padding: 60px 0;
+    color: #fff;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #F8C04E; 
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    color: #DDD; 
+}
+
+.custom-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #F8C04E; 
+    border: none;
+    color: #fff8f8; 
+}
+
+.btn-primary:hover {
+    background-color: #E6AE40; 
+}
+
+.btn-outline-light {
+    border: 2px solid #F8C04E; 
+    color: #F8C04E;
+}
+
+.btn-outline-light:hover {
+    background-color: #F8C04E;
+    color: #1A1A1A;
+}
+
+.card {
+ 
+
+    border-radius: 10px;
+}
+
+.card img {
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}

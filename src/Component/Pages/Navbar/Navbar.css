@@ -1,0 +1,71 @@
+/* .custom-navbar {
+    background-image: ; 
+  background-size: cover; 
+  background-position: center ;
+    padding: 10px 20px;
+  } */
+  .custom-navbar {
+    background-color: url('../../../Images/bg.svg') transparent; /* خلفية شفافة */
+    padding: 10px 20px;
+    position: fixed; /* لجعل النافبار ثابتًا في الأعلى */
+    width: 100%;
+    z-index: 1000; /* تأكد من أن النافبار فوق أي عناصر أخرى */
+  }
+  
+  
+  .navbar-logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    gap: 20px; 
+  }
+  
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: gold;
+  }
+  
+  .login-btn {
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+  }
+  
+  .login-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  @media (min-width: 992px) {
+    .login-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .login-container {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
