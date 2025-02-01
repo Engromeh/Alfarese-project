@@ -1,71 +1,69 @@
 import logoe from "../../../Images/alfares_headar_logo 1.png";
+
 const Navbar = () => {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src={logoe} alt="Logo" className="navbar-logo" />
-          </a>
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+      <div className="container-fluid d-flex align-items-center justify-content-between">
+        
+        {/* الشعار */}
+        <img src={logoe} className="navbar-brand me-2" alt="logo" />
 
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+        {/* زر التوجل بجانب الشعار مباشرة */}
+        <button
+          className="navbar-toggler ms-1 p-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style={{ width: "auto", padding: "5px 8px" }} 
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav mx-auto d-flex justify-content-center w-100">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  المقالات
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  الخدمات
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  اعمالنا
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  تواصل معنا
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  احصل على عرض السعر
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  الرئيسية
-                </a>
-              </li>
-            </ul>
+        <div className="collapse navbar-collapse  justify-content-center w-100" id="navbarSupportedContent">
+          <ul className="navbar-nav text-center me-auto mb-2 mb-lg-0 gap-5 p-0">
+            <li className="nav-item">
+              <a className="nav-link disabled text-white" href="#">المقالات</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link disabled text-white" href="#">الخدمات</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link disabled text-white" href="#">أعمالنا</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link disabled text-white" href="#">تواصل معنا</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link disabled text-white" href="#">احصل على عرض السعر</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link disabled text-white" href="#">الرئيسية</a>
+            </li>
+          </ul>
 
-            <div className="logines-container ms-auto flex items-center justify-center text-center">
-              <a
-                href="#"
-                className="login-btn px-4 py-2 bg-blue-500 text-white rounded-md"
-              >
-                تسجيل دخول
-              </a>
-            </div>
-          </div>
+          <form className="d-flex ms-2">
+            <button
+              type="submit"
+              className="btn w-100 w-lg-auto"
+              style={{
+                color: "#FFFFFF",
+                backgroundColor: "#151723",
+                border: "2px #F4CFAB solid",
+                borderRadius: "20px",
+                padding: "5px 12px",
+                fontSize: "15px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              تسجيل دخول
+            </button>
+          </form>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 

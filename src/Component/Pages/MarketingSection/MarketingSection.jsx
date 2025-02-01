@@ -1,12 +1,11 @@
 import React from "react";
 import markating from "../../../Images/markating.svg";
-import divider from "../../../Images/Line 4.svg" // صورة الفاصل
+import divider from "../../../Images/Line 4.svg" 
 
 const MarketingSection = () => {
   return (
     <section className="container-fluid text-light py-5">
       <div className="row align-items-center">
-        {/* القسم النصي */}
         <div className="col-lg-6 col-md-5 text-start">
           <h2 className="fw-bold display-5" style={{ direction: "rtl" }}>
             جعل التسويق أكثر من مجرد أداة ترويجية.
@@ -19,15 +18,13 @@ const MarketingSection = () => {
             لأن التسويق هو الجسر الذي يصل أفكارك لعملائك.
           </p>
 
-          {/* الإحصائيات */}
-          <div className="mt-4" style={{marginLeft:"71%"}}>
+          <div className="mt-4">
             <div className="d-flex align-items-center gap-5">
               <div className="text-center">
                 <h4 className="fw-bold display-4">+20</h4>
                 <p className="mb-0 fs-5">سنوات الخبرة</p>
               </div>
 
-              {/* صورة الفاصل */}
               <img src={divider} alt="divider" style={{ height: "60px" }} />
 
               <div className="text-center">
@@ -42,7 +39,6 @@ const MarketingSection = () => {
                 <p className="mb-0 fs-5">المشاريع المنجزة</p>
               </div>
 
-              {/* صورة الفاصل */}
               <img src={divider} alt="divider" style={{ height: "60px" }} />
 
               <div className="text-center">
@@ -53,13 +49,12 @@ const MarketingSection = () => {
           </div>
         </div>
 
-        {/* صورة الجانب */}
         <div className="col-lg-6 col-md-7 text-center">
           <img
             src={markating}
             alt="Marketing Presentation"
             className="img-fluid rounded shadow"
-            style={{ maxWidth: "95%" }} // تقليل عرض الصورة قليلًا
+            style={{ maxWidth: "95%" }}
           />
         </div>
       </div>
