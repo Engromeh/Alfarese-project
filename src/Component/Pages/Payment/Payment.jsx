@@ -1,13 +1,23 @@
+import payment1 from "../../../Images/Orange.svg"
+import payment2 from "../../../Images/we.svg"
+import payment3 from "../../../Images/instapay.svg"
+import payment4 from "../../../Images/vodefone.svg"
+import payment5 from "../../../Images/etasilat.svg"
+import payment6 from "../../../Images/bank.svg"
+
+
 const Payment = () => {
   return (
     <>
       <div className=" py-3">
         <div className="d-flex flex-wrap justify-content-center gap-4">
-          <img src="/logos/orange-money.png" alt="Orange Money" height="40" />
-          <img src="/logos/we-pay.png" alt="We Pay" height="40" />
-          <img src="/logos/instapay.png" alt="Instapay" height="40" />
-          <img src="/logos/vodafone.png" alt="Vodafone" height="40" />
-          <img src="/logos/banque-misr.png" alt="Banque Misr" height="40" />
+          <img src={payment1} alt="Orange Money" style={{width:"180px", height:"135px"}}/>
+          <img src={payment2} alt="We Pay" style={{width:"285px" , height:"135px"}} />
+          <img src={payment3} alt="Instapay" style={{width:"180px", height:"135px"}} />
+          <img src={payment4} alt="Vodafone" style={{width:"180px", height:"135px"}} />
+          <img src={payment5} alt="Banque Misr" style={{width:"180px", height:"135px"}} />
+          <img src={payment6} alt="Banque Misr" style={{width:"180px", height:"135px"}} />
+
         </div>
       </div>
     </>
