@@ -8,7 +8,7 @@ import { FaStar } from "react-icons/fa";
 
 const TeamSlider = () => {
   return (
-    <div className="container text-center my-5 position-relative">
+    <div className=" text-center my-5 position-relative w-100" style={{backgroundColor:"#171a28"}}>
       <h2 className="text-white mb-3">فريق العمل</h2>
       <p style={{ color: "#D9D9D9" }}>
         الفارس المصدر المثالي لكل ما يتعلق بالتسويق الذكي والأعمال، نحن نقدم لك

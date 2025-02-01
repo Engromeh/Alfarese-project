@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import photo7 from "../../../Images/image 7.svg";
 import photo5 from "../../../Images/image 5.svg";
 import photo6 from "../../../Images/image 6.svg";
@@ -38,14 +37,32 @@ const Servres = () => {
       <h1 className="fw-bold">الخدمات</h1>
       <Carousel indicators={false} controls={true} className="my-4"
         prevIcon={
-          <div style={{ position: "absolute", right: "100%" }}>
-            <FaChevronLeft size={30} color="#C4A77D" />
+          <div className="carousel-control left">
+            <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="53" width="53" height="53" rx="8" transform="rotate(90 53 0)" fill="url(#paint0_linear_119_120)"/>
+              <path d="M34 12L19 27.0024L34 42" stroke="#151723" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+              <defs>
+                <linearGradient id="paint0_linear_119_120" x1="79.5" y1="0" x2="79.5" y2="53" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#F4CFAB"/>
+                  <stop offset="1" stopColor="#8E7864"/>
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
         }
         nextIcon={
-        <div style={{ position: "absolute",left: "100%" }}>
-        <FaChevronRight size={30} color="#C4A77D" />
-        </div>
+          <div className="carousel-control right">
+            <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="53" height="53" rx="8" fill="url(#paint0_linear_119_117)"/>
+              <path d="M19 42L34 26.9976L19 12" stroke="#151723" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+              <defs>
+                <linearGradient id="paint0_linear_119_117" x1="26.5" y1="0" x2="26.5" y2="53" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#F4CFAB"/>
+                  <stop offset="1" stopColor="#8E7864"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
         }
       >
         {groupedServices.map((group, idx) => (
@@ -53,7 +70,7 @@ const Servres = () => {
             <div className="row justify-content-center">
               {group.map((service, index) => (
                 <div key={index} className={`mb-3 ${itemsPerSlide === 1 ? "col-12" : "col-md-6 col-lg-3"}`}>
-                  <div className="card text-white p-3 text-center" style={{ backgroundColor: "#202130", width: "100%" , height:"100%"}}>
+                  <div className="card text-white p-3 text-center" style={{ backgroundColor: "#202130", width: "100%", height: "100%" }}>
                     <img src={service.img} alt={service.title} className="card-img-top" style={{ height: "100px", objectFit: "contain" }} />
                     <h5 className="mt-3">{service.title}</h5>
                     <p>{service.desc}</p>

@@ -2,7 +2,7 @@ import logoe from "../../../Images/alfares_headar_logo 1.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top" style={{backgroundColor:"#171a28"}}>
       <div className="container-fluid d-flex align-items-center justify-content-between">
         
         {/* الشعار */}
@@ -17,30 +17,47 @@ const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style={{ width: "auto", padding: "5px 8px" }} 
+          style={{ width: "auto", padding: "5px 8px" }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse  justify-content-center w-100" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse justify-content-center w-100" id="navbarSupportedContent">
           <ul className="navbar-nav text-center me-auto mb-2 mb-lg-0 gap-5 p-0">
             <li className="nav-item">
-              <a className="nav-link disabled text-white" href="#">المقالات</a>
+              <a className="nav-link text-white" href="#">المقالات</a>
+            </li>
+
+            {/* عنصر الخدمات كقائمة منسدلة */}
+            <li className="nav-item dropdown">
+              <a 
+                className="nav-link dropdown-toggle text-white" 
+                href="#" 
+                id="servicesDropdown" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false"
+              >
+                الخدمات
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a className="dropdown-item" href="#">خدمة 1</a></li>
+                <li><a className="dropdown-item" href="#">خدمة 2</a></li>
+                <li><a className="dropdown-item" href="#">خدمة 3</a></li>
+              </ul>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link text-white" href="#">أعمالنا</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled text-white" href="#">الخدمات</a>
+              <a className="nav-link text-white" href="#">تواصل معنا</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled text-white" href="#">أعمالنا</a>
+              <a className="nav-link text-white" href="#">احصل على عرض السعر</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled text-white" href="#">تواصل معنا</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled text-white" href="#">احصل على عرض السعر</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled text-white" href="#">الرئيسية</a>
+              <a className="nav-link text-white" href="#">الرئيسية</a>
             </li>
           </ul>
 

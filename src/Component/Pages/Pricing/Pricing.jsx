@@ -5,7 +5,7 @@ import { BsCircleFill } from "react-icons/bs"; // أيقونة دائرة ممت
 
 const Pricing = () => {
   return (
-    <Container className="pricing-container text-center">
+    <div className="pricing-container text-center w-100" style={{backgroundColor:"#171a28" }}>
       <Row className="align-items-center mb-4">
         <Col md={6}>
           <h2 className="pricing-subtitle text-start">
@@ -90,7 +90,7 @@ const Pricing = () => {
           </Card>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 

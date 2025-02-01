@@ -7,8 +7,11 @@ import sendd from "../../../Images/carbon_send.svg";
 
 const Footer = () => {
   return (
-    <footer className="text-white py-5 px-3">
-      <div className="container">
+    <footer 
+      className="text-white py-5 px-3 w-100"  
+      style={{ backgroundColor: "#171a28" }}
+    >
+      <div className="container-fluid"> 
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12 text-center text-md-start">
             <div className="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
@@ -85,18 +88,17 @@ const Footer = () => {
               We'd love to hear from you.
             </p>
             <div
-  className="d-flex align-items-center justify-content-center justify-content-md-start px-3 py-2"
-  style={{ border: "2px #D9D9D933 solid", borderRadius: "20px" }}
->
-  <input
-    type="email"
-    placeholder="Send Enail"
-    className="border-0 bg-transparent text-white fw-bold me-2 p-2 w-100"
-    style={{ outline: "none" }}
-  />
-  <img src={sendd} alt="Send" width="20" height="20" />
-</div>
-
+              className="d-flex align-items-center justify-content-center justify-content-md-start px-3 py-2"
+              style={{ border: "2px #D9D9D933 solid", borderRadius: "20px" }}
+            >
+              <input
+                type="email"
+                placeholder="Send Email"
+                className="border-0 bg-transparent text-white fw-bold me-2 p-2 w-100"
+                style={{ outline: "none" }}
+              />
+              <img src={sendd} alt="Send" width="20" height="20" />
+            </div>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ import payment6 from "../../../Images/bank.svg"
 const Payment = () => {
   return (
     <>
-      <div className=" py-3">
+      <div className=" py-3 w-100" style={{backgroundColor:"#171a28"}}>
         <div className="d-flex flex-wrap justify-content-center gap-4">
           <img src={payment1} alt="Orange Money" style={{width:"180px", height:"135px"}}/>
           <img src={payment2} alt="We Pay" style={{width:"285px" , height:"135px"}} />
