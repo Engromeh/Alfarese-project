@@ -9,6 +9,7 @@ import Sectioneplan from '../Pages/Sectioneplan/Sectioneplan'
 import ContactForm from '../Pages/ContactForm/ContactForm'
 import Footer from '../Pages/Footer/Footer'
 import Pricing from '../Pages/Pricing/Pricing'
+import TeamSlider from '../Pages/TeamSlider/TeamSlider'
 
 const Home = () => {
   return (
@@ -21,7 +22,9 @@ const Home = () => {
  <Servres />
  <Pricing />
  <Sectioneplan />
+ <TeamSlider />
  <ContactForm />
+
         <Footer />
     </>
   )

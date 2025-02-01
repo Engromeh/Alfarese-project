@@ -15,7 +15,6 @@ const services = [
   { img: photo6, title: "تحسين الأداء", desc: "تحليل أداء المواقع وتقديم حلول لتحسين السرعة." },
 ];
 
-// دالة تقسيم البيانات إلى مجموعات بناءً على العدد المطلوب
 const chunkArray = (array, size) => {
   return array.reduce((acc, _, i) => (i % size ? acc : [...acc, array.slice(i, i + size)]), []);
 };
@@ -54,7 +53,7 @@ const Servres = () => {
             <div className="row justify-content-center">
               {group.map((service, index) => (
                 <div key={index} className={`mb-3 ${itemsPerSlide === 1 ? "col-12" : "col-md-6 col-lg-3"}`}>
-                  <div className="card text-white p-3 text-center" style={{ backgroundColor: "#202130", width: "100%" }}>
+                  <div className="card text-white p-3 text-center" style={{ backgroundColor: "#202130", width: "100%" , height:"100%"}}>
                     <img src={service.img} alt={service.title} className="card-img-top" style={{ height: "100px", objectFit: "contain" }} />
                     <h5 className="mt-3">{service.title}</h5>
                     <p>{service.desc}</p>

@@ -1,13 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-
+import { FaCheckCircle } from "react-icons/fa"; // أيقونة صح
+import { BsCircleFill } from "react-icons/bs"; // أيقونة دائرة ممتلئة
 
 const Pricing = () => {
   return (
     <Container className="pricing-container text-center">
       <Row className="align-items-center mb-4">
         <Col md={6}>
-          <h2 className="pricing-subtitletext-start">
+          <h2 className="pricing-subtitle text-start">
             احصل على أفضل خطة تناسب عملك، مع خيارات دفع مرنة - يومي - شهري - سنوي.
           </h2>
         </Col>
@@ -29,52 +30,61 @@ const Pricing = () => {
       </div>
 
       <Row className="justify-content-center mt-4">
+        {/* كارد 1 */}
         <Col md={4} sm={6}>
           <Card className="pricing-card">
             <Card.Body>
-              <Card.Title className="plan-title">مشروع</Card.Title>
-              <Card.Text className="plan-price">$164</Card.Text>
-              <Card.Text className="plan-duration">لكل شهر | 07 خدمات</Card.Text>
-              <ul className="plan-features">
-                <li>تصميم واجهة المستخدم</li>
-                <li>تطوير الموقع</li>
-                <li>تحسين SEO</li>
-                <li>دعم فني</li>
-                <li>حماية الموقع</li>
-                <li>تحديثات دورية</li>
-                <li>إدارة المحتوى</li>
+              <Card.Title className="plan-title ">مشروع</Card.Title>
+              <Card.Text className="plan-price ">$164</Card.Text>
+              <Card.Text className="plan-duration ">لكل شهر | 07 خدمات</Card.Text>
+              <ul className="plan-features text-start ms-0">
+                <li><FaCheckCircle  style={{color:"#F4CFAB"}}/> دعم الأولوية</li>
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> دعم الدردشة</li>
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> إدارة الفريق</li>
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> الاستهداف المتقدم</li>
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> إدارة مواقع متعددة</li>
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> الاجتماع الأسبوعي للفرق</li>
+                <li><FaCheckCircle  style={{color:"#D9D9D933"}} /> تقرير أداء الحساب</li>
               </ul>
             </Card.Body>
           </Card>
         </Col>
 
+        {/* كارد 2 */}
         <Col md={4} sm={6}>
           <Card className="pricing-card featured">
             <Card.Body>
-              <Card.Title className="plan-title">مميز</Card.Title>
-              <Card.Text className="plan-price">$148</Card.Text>
-              <Card.Text className="plan-duration">لكل شهر | 05 خدمات</Card.Text>
-              <ul className="plan-features">
-                <li>تصميم واجهة المستخدم</li>
-                <li>تطوير الموقع</li>
-                <li>تحسين SEO</li>
-                <li>دعم فني</li>
-                <li>حماية الموقع</li>
+              <Card.Title className="plan-title ">مميز</Card.Title>
+              <Card.Text className="plan-price ">$148</Card.Text>
+              <Card.Text className="plan-duration ">لكل شهر | 05 خدمات</Card.Text>
+              <ul className="plan-features text-start ms-0">
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> دعم الأولوية</li>
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> دعم الدردشة</li>
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> إدارة الفريق</li>
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> الاستهداف المتقدم</li>
+                <li><FaCheckCircle  style={{color:"#D9D9D933"}} /> إدارة مواقع متعددة</li>
+                <li><FaCheckCircle  style={{color:"#D9D9D933"}} /> الاجتماع الأسبوعي للفرق</li>
+                <li><FaCheckCircle  style={{color:"#D9D9D933"}} /> تقرير أداء الحساب</li>
               </ul>
             </Card.Body>
           </Card>
         </Col>
 
+        {/* كارد 3 */}
         <Col md={4} sm={6}>
           <Card className="pricing-card">
             <Card.Body>
-              <Card.Title className="plan-title">بداية</Card.Title>
-              <Card.Text className="plan-price">$132</Card.Text>
-              <Card.Text className="plan-duration">لكل شهر | 03 خدمات</Card.Text>
-              <ul className="plan-features">
-                <li>تصميم واجهة المستخدم</li>
-                <li>تطوير الموقع</li>
-                <li>تحسين SEO</li>
+              <Card.Title className="plan-title ">بداية</Card.Title>
+              <Card.Text className="plan-price ">$132</Card.Text>
+              <Card.Text className="plan-duration ">لكل شهر | 03 خدمات</Card.Text>
+              <ul className="plan-features text-start ms-0">
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> دعم الأولوية</li>
+                <li><FaCheckCircle style={{color:"#F4CFAB"}} /> دعم الدردشة</li>
+                <li><FaCheckCircle  style={{color:"#D9D9D933"}} /> إدارة الفريق</li>
+                <li><FaCheckCircle  style={{color:"#D9D9D933"}} /> الاستهداف المتقدم</li>
+                <li><FaCheckCircle  style={{color:"#D9D9D933"}} /> إدارة مواقع متعددة</li>
+                <li><FaCheckCircle  style={{color:"#D9D9D933"}} /> الاجتماع الأسبوعي للفرق</li>
+                <li><FaCheckCircle  style={{color:"#D9D9D933"}} /> تقرير أداء الحساب</li>
               </ul>
             </Card.Body>
           </Card>

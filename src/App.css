@@ -206,9 +206,8 @@ input::placeholder {
 
 .toggle-buttons {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
+  justify-content: left;
+  margin-top: -60px;
 }
 
 .toggle-btn {
@@ -340,4 +339,23 @@ input::placeholder {
     margin-top: 15px !important;
     font-size: 35px !important;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #F4CFAB; 
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px; 
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px; 
+  font-weight: bold;
+  color: #151723; 
 }
