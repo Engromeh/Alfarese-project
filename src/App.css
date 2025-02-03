@@ -4,6 +4,7 @@
   text-align: center;
   background-color: #151723;
   width: 100%;
+
 }
 
 .logo {
@@ -187,11 +188,7 @@ input::placeholder {
 }
 
 /*pricing*/
-.pricing-container {
-  color: white;
-  padding: 50px 20px;
-  border-radius: 10px;
-}
+
 
 .pricing-title {
   font-size: 24px;

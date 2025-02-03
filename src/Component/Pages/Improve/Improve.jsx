@@ -2,7 +2,6 @@ import React from "react";
 import impr1 from "../../../Images/nahid photo (1).svg";
 import impr2 from "../../../Images/nahid photo (2).svg";
 import impr3 from "../../../Images/nahid photo.svg";
-import buttonIcon from "../../../Images/Frame 22.svg";
 const Improve = () => {
   return (
     <>
