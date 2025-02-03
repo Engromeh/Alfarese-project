@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoe from "../../../Images/alfares_headar_logo 1.png";
 
 const Navbar = () => {
@@ -28,9 +29,9 @@ const Navbar = () => {
         >
           <ul className="navbar-nav text-center me-auto mb-2 mb-lg-0 gap-5 p-0">
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white"  to={"/ArticlePage"}>
                 المقالات
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item dropdown">
@@ -79,9 +80,9 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to={"/"}>
                 الرئيسية
-              </a>
+              </Link>
             </li>
           </ul>
 

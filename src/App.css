@@ -57,6 +57,10 @@ body {
   width: 100%;
   z-index: 1000;
 }
+.navbar-nav .nav-item:hover {
+  border-bottom: 2px solid #F4CFAB;
+}
+
 
 .navbar-logo {
   width: 50px;
