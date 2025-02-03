@@ -5,10 +5,8 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light fixed-top" style={{backgroundColor:"#171a28"}}>
       <div className="container-fluid d-flex align-items-center justify-content-between">
         
-        {/* الشعار */}
         <img src={logoe} className="navbar-brand me-2" alt="logo" />
 
-        {/* زر التوجل بجانب الشعار مباشرة */}
         <button
           className="navbar-toggler ms-1 p-1"
           type="button"
@@ -28,7 +26,6 @@ const Navbar = () => {
               <a className="nav-link text-white" href="#">المقالات</a>
             </li>
 
-            {/* عنصر الخدمات كقائمة منسدلة */}
             <li className="nav-item dropdown">
               <a 
                 className="nav-link dropdown-toggle text-white" 
