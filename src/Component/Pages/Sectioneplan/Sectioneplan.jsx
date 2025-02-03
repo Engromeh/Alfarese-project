@@ -6,20 +6,26 @@ const Sectioneplan = () => {
     <div className="container my-5 text-white text-end">
       <div className="row align-items-center">
         <div className="col-md-6">
-          <img src={planphoto} alt="Market Analysis" className="img-fluid rounded" />
+          <img
+            src={planphoto}
+            alt="Market Analysis"
+            className="img-fluid rounded"
+          />
         </div>
         <div className="col-md-6 text-end">
-          <h2 className="fw-bold text-break"
+          <h2
+            className="fw-bold text-break"
             style={{
               fontSize: "65px",
-              fontWeight: "bold"
+              fontWeight: "bold",
             }}
           >
             أحدث ما في مدونتنا بمكانك زيارته
           </h2>
 
           <p className="text-white">
-            قم بتحديث أحدث الأخبار ومتابعة حول عالم التسويق الرقمي حديثنا لإفادة مشروعك
+            قم بتحديث أحدث الأخبار ومتابعة حول عالم التسويق الرقمي حديثنا لإفادة
+            مشروعك
           </p>
 
           <ul className="list-unstyled">

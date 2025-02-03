@@ -22,8 +22,7 @@ const ContactForm = () => {
                     type="text"
                     className="custom-placeholder"
                     placeholder="الاسم الكامل"
-                    style={{border:"none"}}
-
+                    style={{ border: "none" }}
                   />
                 </Form.Group>
               </Col>
@@ -33,8 +32,7 @@ const ContactForm = () => {
                     type="text"
                     className="custom-placeholder"
                     placeholder="اسم شركتك"
-                    style={{border:"none"}}
-
+                    style={{ border: "none" }}
                   />
                 </Form.Group>
               </Col>
@@ -47,14 +45,16 @@ const ContactForm = () => {
                     type="text"
                     className="custom-placeholder"
                     placeholder="رقم الهاتف"
-                    style={{border:"none"}}
+                    style={{ border: "none" }}
                   />
                 </Form.Group>
               </Col>
               <Col md={6}>
                 <Dropdown className="mb-3 w-100">
-                  <Dropdown.Toggle className="dropdown-custom w-100"                     style={{border:"none"}}
->
+                  <Dropdown.Toggle
+                    className="dropdown-custom w-100"
+                    style={{ border: "none" }}
+                  >
                     نوع الخدمة
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
@@ -71,13 +71,13 @@ const ContactForm = () => {
                 rows={3}
                 className="custom-placeholder"
                 placeholder="اكتب رسالتك هنا..."
-                style={{border:"none"}}
-
+                style={{ border: "none" }}
               />
             </Form.Group>
 
-            <Button className="custom-button w-100"                     style={{border:"none"}}
->اطلب الخدمة</Button>
+            <Button className="custom-button w-100" style={{ border: "none" }}>
+              اطلب الخدمة
+            </Button>
           </Form>
         </Col>
       </Row>

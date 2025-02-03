@@ -6,16 +6,43 @@ import photo6 from "../../../Images/image 6.svg";
 import photo8 from "../../../Images/image 8.svg";
 
 const services = [
-  { img: photo7, title: "تنظيم البيانات والتقارير", desc: "تحليل البيانات وإعداد التقارير المتكاملة." },
-  { img: photo6, title: "تصميم متاجر", desc: "إنشاء متاجر إلكترونية احترافية وفق احتياجات العملاء." },
-  { img: photo5, title: "تصميم المواقع الإلكترونية", desc: "تصميم مواقع ويب متجاوبة وتحسين تجربة المستخدم." },
-  { img: photo8, title: "UGC", desc: "إنشاء محتوى مخصص باستخدام استراتيجيات تسويقية فعالة." },
-  { img: photo7, title: "تحليل البيانات", desc: "تقديم استراتيجيات بناء على البيانات وتحليلها." },
-  { img: photo6, title: "تحسين الأداء", desc: "تحليل أداء المواقع وتقديم حلول لتحسين السرعة." },
+  {
+    img: photo7,
+    title: "تنظيم البيانات والتقارير",
+    desc: "تحليل البيانات وإعداد التقارير المتكاملة.",
+  },
+  {
+    img: photo6,
+    title: "تصميم متاجر",
+    desc: "إنشاء متاجر إلكترونية احترافية وفق احتياجات العملاء.",
+  },
+  {
+    img: photo5,
+    title: "تصميم المواقع الإلكترونية",
+    desc: "تصميم مواقع ويب متجاوبة وتحسين تجربة المستخدم.",
+  },
+  {
+    img: photo8,
+    title: "UGC",
+    desc: "إنشاء محتوى مخصص باستخدام استراتيجيات تسويقية فعالة.",
+  },
+  {
+    img: photo7,
+    title: "تحليل البيانات",
+    desc: "تقديم استراتيجيات بناء على البيانات وتحليلها.",
+  },
+  {
+    img: photo6,
+    title: "تحسين الأداء",
+    desc: "تحليل أداء المواقع وتقديم حلول لتحسين السرعة.",
+  },
 ];
 
 const chunkArray = (array, size) => {
-  return array.reduce((acc, _, i) => (i % size ? acc : [...acc, array.slice(i, i + size)]), []);
+  return array.reduce(
+    (acc, _, i) => (i % size ? acc : [...acc, array.slice(i, i + size)]),
+    []
+  );
 };
 
 const Servres = () => {
@@ -27,7 +54,9 @@ const Servres = () => {
   };
 
   const [itemsPerSlide, setItemsPerSlide] = useState(getItemsPerSlide());
-  const [arrowPosition, setArrowPosition] = useState(window.innerWidth < 768 ? "5%" : "-40px");
+  const [arrowPosition, setArrowPosition] = useState(
+    window.innerWidth < 768 ? "5%" : "-40px"
+  );
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,28 +68,71 @@ const Servres = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const groupedServices = useMemo(() => chunkArray(services, itemsPerSlide), [itemsPerSlide]);
+  const groupedServices = useMemo(
+    () => chunkArray(services, itemsPerSlide),
+    [itemsPerSlide]
+  );
 
   return (
     <div className="container text-center text-white py-5 position-relative">
       <h1 className="fw-bold">الخدمات</h1>
-      <Carousel indicators={false} controls={true} className="my-4 position-relative"
+      <Carousel
+        indicators={false}
+        controls={true}
+        className="my-4 position-relative"
         prevIcon={
-          <div className=" position-absolute top-50 translate-middle-y" style={{ left: arrowPosition, zIndex: 10 }}>
+          <div
+            className=" position-absolute top-50 translate-middle-y"
+            style={{ left: arrowPosition, zIndex: 10 }}
+          >
             <button className="arrow-btn">
-              <svg width="40" height="40" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="53" width="53" height="53" rx="8" transform="rotate(90 53 0)" fill="#F4CFAB"/>
-                <path d="M34 12L19 27.0024L34 42" stroke="#151723" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 53 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="53"
+                  width="53"
+                  height="53"
+                  rx="8"
+                  transform="rotate(90 53 0)"
+                  fill="#F4CFAB"
+                />
+                <path
+                  d="M34 12L19 27.0024L34 42"
+                  stroke="#151723"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </button>
           </div>
         }
         nextIcon={
-          <div className="position-absolute top-50 translate-middle-y" style={{ right: arrowPosition, zIndex: 10 }}>
+          <div
+            className="position-absolute top-50 translate-middle-y"
+            style={{ right: arrowPosition, zIndex: 10 }}
+          >
             <button className="arrow-btn">
-              <svg width="40" height="40" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="53" height="53" rx="8" fill="#F4CFAB"/>
-                <path d="M19 42L34 26.9976L19 12" stroke="#151723" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 53 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="53" height="53" rx="8" fill="#F4CFAB" />
+                <path
+                  d="M19 42L34 26.9976L19 12"
+                  stroke="#151723"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </button>
           </div>
@@ -70,9 +142,24 @@ const Servres = () => {
           <Carousel.Item key={idx}>
             <div className="row justify-content-center">
               {group.map((service, index) => (
-                <div key={index} className={`mb-3 ${itemsPerSlide === 1 ? "col-12" : itemsPerSlide === 2 ? "col-6" : itemsPerSlide === 3 ? "col-md-4" : "col-lg-3"}`}>
+                <div
+                  key={index}
+                  className={`mb-3 ${
+                    itemsPerSlide === 1
+                      ? "col-12"
+                      : itemsPerSlide === 2
+                      ? "col-6"
+                      : itemsPerSlide === 3
+                      ? "col-md-4"
+                      : "col-lg-3"
+                  }`}
+                >
                   <div className="card text-white p-3 text-center service-card">
-                    <img src={service.img} alt={service.title} className="card-img-top service-img" />
+                    <img
+                      src={service.img}
+                      alt={service.title}
+                      className="card-img-top service-img"
+                    />
                     <h5 className="mt-3">{service.title}</h5>
                     <p>{service.desc}</p>
                   </div>

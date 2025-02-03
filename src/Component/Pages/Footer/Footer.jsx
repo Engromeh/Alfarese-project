@@ -7,15 +7,21 @@ import sendd from "../../../Images/carbon_send.svg";
 
 const Footer = () => {
   return (
-    <footer 
-      className="text-white py-5 px-3 w-100"  
+    <footer
+      className="text-white py-5 px-3 w-100"
       style={{ backgroundColor: "#171a28" }}
     >
-      <div className="container-fluid"> 
+      <div className="container-fluid">
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12 text-center text-md-start">
-            <div className="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
-              <img src={logo} alt="ALFARES Logo" className="me-2" width="50" height="50" />
+            <div className="d-flex align-items-center justify-content-center justify-content-md-start mb-3" >
+              <img
+                src={logo}
+                alt="ALFARES Logo"
+                className="me-2"
+                width="50"
+                height="50"
+              />
               <h5 className="mb-0">
                 Marketing <br />
                 Agency
@@ -24,7 +30,9 @@ const Footer = () => {
 
             <p className="text-white">
               Marketing is the key to success. <br />
-              Understand your customers, show your value, and build lasting loyalty.
+              Understand your customers,<br/> show your value,
+               and build lasting
+              loyalty.
             </p>
 
             <div className="d-flex gap-4 justify-content-center justify-content-md-start">
