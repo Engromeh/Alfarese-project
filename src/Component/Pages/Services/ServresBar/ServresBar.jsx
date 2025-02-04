@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { Carousel } from "react-bootstrap";
-import photo7 from "../../../Images/image 7.svg";
-import photo5 from "../../../Images/image 5.svg";
-import photo6 from "../../../Images/image 6.svg";
-import photo8 from "../../../Images/image 8.svg";
+import photo7 from "../../../../Images/image 7.svg";
+import photo5 from "../../../../Images/image 5.svg";
+import photo6 from "../../../../Images/image 6.svg";
+import photo8 from "../../../../Images/image 8.svg";
 
 const services = [
   {
@@ -45,7 +45,7 @@ const chunkArray = (array, size) => {
   );
 };
 
-const Servres = () => {
+const ServresBar = () => {
   const getItemsPerSlide = () => {
     if (window.innerWidth < 576) return 1;
     if (window.innerWidth < 768) return 2;
@@ -173,4 +173,4 @@ const Servres = () => {
   );
 };
 
-export default Servres;
+export default ServresBar;

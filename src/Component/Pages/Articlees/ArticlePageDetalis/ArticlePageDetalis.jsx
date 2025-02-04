@@ -1,14 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ph1 from "../../../Images/Mask group (1).svg";
-import ph2 from "../../../Images/ph22.svg";
-import logo188 from "../../../Images/Group 188.svg";
-import logo189 from "../../../Images/Group 189.svg";
-import backLogo from "../../../Images/Icon back.svg";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+import ph1 from "../../../../Images/Mask group (1).svg";
+import ph2 from "../../../../Images/ph22.svg";
+import logo188 from "../../../../Images/Group 188.svg";
+import logo189 from "../../../../Images/Group 189.svg";
+import backLogo from "../../../../Images/Icon back.svg";
+import Navbar from "../../Navbar/Navbar";
+import Footer from "../../Footer/Footer";
 
-const ArticlePage = () => {
+const ArticlePageDetalis= () => {
   return (
     <>
       <Navbar />
@@ -106,4 +106,4 @@ const ArticlePage = () => {
   );
 };
 
-export default ArticlePage;
+export default ArticlePageDetalis;

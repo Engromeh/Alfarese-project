@@ -594,3 +594,12 @@ input::placeholder {
   border-radius: 12px;
   z-index: 0;
 }
+.articleshow-container {
+  margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+  .articleshow-container {
+    margin-top: 21%;
+  }
+}

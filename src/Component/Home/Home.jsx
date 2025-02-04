@@ -4,12 +4,12 @@ import HeroSection from '../Pages/HeroSection/HeroSection'
 import Payment from '../Pages/Payment/Payment'
 import MarketingSection from '../Pages/MarketingSection/MarketingSection'
 import Improve from '../Pages/Improve/Improve'
-import Servres from '../Pages/Servres/Servres'
 import Sectioneplan from '../Pages/Sectioneplan/Sectioneplan'
 import ContactForm from '../Pages/ContactForm/ContactForm'
 import Footer from '../Pages/Footer/Footer'
 import Pricing from '../Pages/Pricing/Pricing'
 import TeamSlider from '../Pages/TeamSlider/TeamSlider'
+import ServresBar from '../Pages/Services/ServresBar/ServresBar'
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
  <Payment/>
  <MarketingSection />
  <Improve />
- <Servres />
+ <ServresBar />
  <Pricing />
  <Sectioneplan />
  <TeamSlider />

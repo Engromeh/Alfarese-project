@@ -29,7 +29,7 @@ const Navbar = () => {
         >
           <ul className="navbar-nav text-center me-auto mb-2 mb-lg-0 gap-5 p-0">
             <li className="nav-item">
-              <Link className="nav-link text-white"  to={"/ArticlePage"}>
+              <Link className="nav-link text-white"  to={"/ArticlePagesshow"}>
                 المقالات
               </Link>
             </li>
