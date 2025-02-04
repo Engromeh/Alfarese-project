@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-const ServicesCard = ({ title, description ,imges }) => {
+
+const ServicesCard = ({ title, description , images}) => {
   return (
     <div
       className="card    text-light h-100"
@@ -11,19 +12,19 @@ const ServicesCard = ({ title, description ,imges }) => {
     >
       <div className="card-body">
         <img
-          src={imges}
+          src={images}
           alt=""
           className=" me-auto"
           style={{
             position: "absolute",
             top: "0",
-            right: "-40px",
-            width: "180px",
+            right: "-5px",
+            width: "160px",
           }}
         />
         <h5
           className="card-title "
-          style={{ fontSize: "12px", marginTop: "80px" }}
+          style={{ fontSize: "12px", marginTop: "80px"  }}
         >
           {title}
         </h5>
@@ -38,7 +39,10 @@ const ServicesCard = ({ title, description ,imges }) => {
           {description}
         </p>
       </div>
+    
     </div>
+   
+            
   );
 };
 

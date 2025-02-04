@@ -1,7 +1,7 @@
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
-
-const ServiceCard = ({ title, description , imges }) => {
+import phhhh5 from "../../../../Images/image 6.svg"
+const ServiceCard = ({ title, description}) => {
   return (
     
     <div
@@ -10,10 +10,10 @@ const ServiceCard = ({ title, description , imges }) => {
     >
       <div className="bg-secondary d-flex align-items-center justify-content-center p-4 rounded">
         <img
-          src={imges}
+          src={phhhh5}
           alt={title}
           className="img-fluid"
-          style={{ width: "60px", height: "60px" }}
+          style={{ width: "60px", height: "60px"  }} 
         />
       </div>
 
@@ -44,7 +44,7 @@ const ServicesDetails = () => {
               }}
             >
               <img
-                src="{serviceIcon}"
+                src={phhhh5}
                 alt={services.title}
                 style={{ width: "350px" }}
               />

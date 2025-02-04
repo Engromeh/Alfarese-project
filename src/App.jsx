@@ -8,6 +8,7 @@ import ArticlePagesshow from "./Component/Pages/Articlees/ArticlePagesshow";
 import ArticlePageDetalis from "./Component/Pages/Articlees/ArticlePageDetalis/ArticlePageDetalis";
 import ServicesPage from "./Component/Pages/Services/ServresShow/ServicesShowPage";
 import ServicesDetails from "./Component/Pages/Services/ServiceDetails/ServiceDetails";
+import OurWorksPage from "./Component/Pages/ourWorks/OurWorksPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/ArticlePagesshow" element={<ArticlePagesshow />} />
         <Route path="/Servicepage" element={<ServicesPage />} />
         <Route path="/ServiceDetails" element={<ServicesDetails />} />
+        <Route path="/Ourwork" element={<OurWorksPage/>} />
 
     
       </Routes>

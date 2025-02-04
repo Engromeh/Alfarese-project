@@ -8,8 +8,8 @@ import sendd from "../../../Images/carbon_send.svg";
 const Footer = () => {
   return (
     <footer
-      className="text-white py-5 px-3 w-100"
-      style={{ backgroundColor: "#171a28" }}
+      className="text-white py-5 px-5 w-100"
+      style={{ backgroundColor: "#171a28" , padding:"20px"}}
     >
       <div className="container-fluid">
         <div className="row">

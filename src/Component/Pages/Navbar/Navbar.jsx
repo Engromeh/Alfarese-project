@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 import logoe from "../../../Images/alfares_headar_logo 1.png";
 
 const Navbar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light fixed-top"
+      className="navbar navbar-expand-lg navbar-light "
       style={{ backgroundColor: "#171a28" }}
     >
       <div className="container-fluid d-flex align-items-center justify-content-between">
@@ -65,9 +65,9 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to={"/Ourwork"}>
                 أعمالنا
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link text-white" href="#">
