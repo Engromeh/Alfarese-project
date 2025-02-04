@@ -2,6 +2,9 @@
 import OurWorksCard from "./OurWorksCard";
 import Slider from "./Slider";
 import btnIcon from "../../../Images/Group 229.svg";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+
 const data = [
   { id: 1, img:" Image", title: "تنظيم فعاليات و مؤتمرات" },
   { id: 2, img:" Image", title: "تنظيم فعاليات و مؤتمرات" },
@@ -14,7 +17,10 @@ const data = [
 ];
 const OurWorksPage = () => {
   return (
+    <>
+    <Navbar />
     <div className="" style={{ backgroundColor: "#151723" }}>
+  
       <div className="container p-5">
         <Slider />
         <div
@@ -43,6 +49,8 @@ const OurWorksPage = () => {
         </button>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
