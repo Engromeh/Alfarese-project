@@ -656,3 +656,8 @@ input::placeholder {
   margin: 0 !important;
   padding: 0 !important;
 }
+.accordion-item{
+  background-color: none !important;
+  box-shadow: none !important;
+  border: none !important;;
+}

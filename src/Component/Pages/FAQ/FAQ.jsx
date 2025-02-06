@@ -9,10 +9,9 @@ const FAQ = () => {
       <div className="container py-5" style={{ direction: "rtl" }}>
         <h2 className="text-center text-white mb-4">FAQ</h2>
         <div className="row">
-          {/* العمود الأيمن - يحتوي الآن على 5 أسئلة */}
           <div className="col-md-6">
             <div className="accordion" id="faqAccordionRight">
-              <div className="accordion-item mb-3">
+              <div className="accordion-item mb-3" style={{ backgroundColor: "transparent", border: "none", boxShadow:"none" }}>
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button custom-accordion"
@@ -28,7 +27,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              <div className="accordion-item mb-3">
+              <div className="accordion-item mb-3" style={{ backgroundColor: "transparent", border: "none" , boxShadow:"none"}}>
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button collapsed custom-accordion"
@@ -44,7 +43,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              <div className="accordion-item mb-3">
+              <div className="accordion-item mb-3" style={{ backgroundColor: "transparent", border: "none", boxShadow:"none" }}>
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button collapsed custom-accordion"
@@ -60,7 +59,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              <div className="accordion-item mb-3">
+              <div className="accordion-item mb-3" style={{ backgroundColor: "transparent", border: "none", boxShadow:"none" }}>
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button collapsed custom-accordion"
@@ -76,7 +75,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              <div className="accordion-item mb-3">
+              <div className="accordion-item mb-3" style={{ backgroundColor: "transparent", border: "none" , boxShadow:"none"}}>
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button collapsed custom-accordion"
@@ -94,10 +93,9 @@ const FAQ = () => {
             </div>
           </div>
 
-          {/* العمود الأيسر - يحتوي الآن على 5 أسئلة أخرى */}
           <div className="col-md-6">
             <div className="accordion" id="faqAccordionLeft">
-              <div className="accordion-item mb-3">
+              <div className="accordion-item mb-3" style={{ backgroundColor: "transparent", border: "none" , boxShadow:"none"}}>
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button custom-accordion"
@@ -113,7 +111,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              <div className="accordion-item mb-3">
+              <div className="accordion-item mb-3" style={{ backgroundColor: "transparent", border: "none", boxShadow:"none" }}>
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button collapsed custom-accordion"
@@ -129,7 +127,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              <div className="accordion-item mb-3">
+              <div className="accordion-item mb-3" style={{ backgroundColor: "transparent", border: "none", boxShadow:"none"}}>
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button collapsed custom-accordion"
@@ -145,7 +143,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              <div className="accordion-item mb-3">
+              <div className="accordion-item mb-3" style={{ backgroundColor: "transparent", border: "none" , boxShadow:"none"}}>
                 <h2 className="accordion-header">
                   <button
                     className="accordion-button collapsed custom-accordion"
