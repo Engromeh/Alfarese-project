@@ -3,6 +3,7 @@
   margin: 0 auto;
   background-color: #151723;
   width: 100%;
+  height: auto;
 }
 * {
   margin: 0;
@@ -661,13 +662,11 @@ input::placeholder {
   box-shadow: none !important;
   border: none !important;;
 }
-/* تغيير لون الشريط المتحرك */
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(45deg, #F4CFAB, #D9D9D9); /* لون الشريط */
   border-radius: 10px; /* تقويس الحواف */
 }
 
-/* تغيير لون الشريط عند تمرير الماوس عليه */
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(45deg, #D9D9D9, #F4CFAB);
 }
