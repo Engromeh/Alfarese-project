@@ -9,7 +9,9 @@ import ArticlePageDetalis from "./Component/Pages/Articlees/ArticlePageDetalis/A
 import ServicesPage from "./Component/Pages/Services/ServresShow/ServicesShowPage";
 import ServicesDetails from "./Component/Pages/Services/ServiceDetails/ServiceDetails";
 import OurWorksPage from "./Component/Pages/ourWorks/OurWorksPage";
+
 import FAQ from "./Component/Pages/FAQ/FAQ";
+
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
         <Route path="/Servicepage" element={<ServicesPage />} />
         <Route path="/ServiceDetails" element={<ServicesDetails />} />
         <Route path="/Ourwork" element={<OurWorksPage/>} />
+
         <Route path="/Faq" element={<FAQ />} />
+
 
 
     
