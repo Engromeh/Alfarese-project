@@ -11,6 +11,7 @@ import ServicesDetails from "./Component/Pages/Services/ServiceDetails/ServiceDe
 import OurWorksPage from "./Component/Pages/ourWorks/OurWorksPage";
 
 import FAQ from "./Component/Pages/FAQ/FAQ";
+import CompaneyDetailes from "./Component/Pages/CompaneyDetailes/CompaneyDetailes";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/Ourwork" element={<OurWorksPage/>} />
 
         <Route path="/Faq" element={<FAQ />} />
+        <Route path="/CompaneyDetailes" element={<CompaneyDetailes />} />
 
 
 

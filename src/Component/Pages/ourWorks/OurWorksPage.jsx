@@ -18,11 +18,9 @@ const data = [
 const OurWorksPage = () => {
   return (
     <>
-    <Navbar />
     <div className="" style={{ backgroundColor: "#151723" }}>
   
       <div className="container p-5">
-        <Slider />
         <div
           className="row m-0 gy-3 gx-4 justify-content-center px-sm-1 py-3 px-md-5 "
           style={{
@@ -49,7 +47,6 @@ const OurWorksPage = () => {
         </button>
       </div>
     </div>
-    <Footer />
     </>
   );
 };

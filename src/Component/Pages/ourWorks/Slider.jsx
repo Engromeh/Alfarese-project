@@ -4,8 +4,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import serviceIcon from "../../../Images/Group 188.svg";
-import prevIcon from "../../../Images/sidbaricones.svg";
-import nextIcon from "../../../Images/nextIconsidelbar.svg";
+import prevIcon from "../../../Images/iconenext.svg";
+import nextIcon from "../../../Images/iconeprev.svg";
 
 const services = [
   { name: "تنظيم فعاليات و مؤتمرات", icon: serviceIcon },
@@ -18,23 +18,14 @@ const services = [
 const Slider = () => {
   return (
     <div
-      className="position-relative p-1 p-md-4  mb-4"
-      style={{ backgroundColor: "#2e2e3a", borderRadius: "20px" }}
+      className="position-relative p-3 mb-4 mt-4"
+      style={{
+        backgroundColor: "#2e2e3a",
+        borderRadius: "20px",
+        overflow: "hidden", 
+        position: "relative",
+      }}
     >
-      <img
-        src={prevIcon}
-        alt="Prev"
-        className="swiper-button-prev-custom d-none d-md-block"
-        style={{
-          position: "absolute",
-          left: "-63px",
-          top: "50%",
-          transform: "translateY(-50%)",
-          width: "40px",
-          cursor: "pointer",
-          zIndex: 10,
-        }}
-      />
       <Swiper
         modules={[Navigation]}
         spaceBetween={12}
@@ -51,32 +42,49 @@ const Slider = () => {
         {services.map((service, index) => (
           <SwiperSlide key={index}>
             <div
-              className="d-flex justify-content-between align-items-center "
-              style={{ backgroundColor: "#202130", borderRadius: "12px" }}
+              className="d-flex justify-content-between align-items-center slide-item"
+              style={{
+                backgroundColor: "#202130",
+                borderRadius: "12px",
+                padding: "15px",
+                width: "90%",
+                height: "100%",
+              }}
             >
               <p className="ms-5 text-white" style={{ direction: "rtl" }}>
                 {service.name}
               </p>
-              <img
-                src={service.icon}
-                alt="Service"
-                style={{ width: "60px" }}
-              />
+              <img src={service.icon} alt="Service" style={{ width: "60px" }} />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       <img
-        src={nextIcon}
-        alt="Next"
-        className="swiper-button-next-custom d-none d-md-block"
+        src={prevIcon}
+        alt="Prev"
+        className="swiper-button-prev-custom"
         style={{
           position: "absolute",
-          right: "-65px",
+          left: "10px",
           top: "50%",
           transform: "translateY(-50%)",
-          width: "40px",
+          width: "20px",
+          cursor: "pointer",
+          zIndex: 10,
+        }}
+      />
+
+      <img
+        src={nextIcon}
+        alt="Next"
+        className="swiper-button-next-custom"
+        style={{
+          position: "absolute",
+          right: "10px",
+          top: "50%",
+          transform: "translateY(-50%)",
+          width: "30px",
           cursor: "pointer",
           zIndex: 10,
         }}
