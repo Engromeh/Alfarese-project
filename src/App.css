@@ -48,6 +48,10 @@ body {
   color: #888;
 }
 /* navbar */
+.nav-link{
+  font-family: "Cairo", sans-serif;
+  font-size: 24px !important;
+}
 
 .custom-navbar {
   background-color: url("../../../Images/bg.svg") transparent;
