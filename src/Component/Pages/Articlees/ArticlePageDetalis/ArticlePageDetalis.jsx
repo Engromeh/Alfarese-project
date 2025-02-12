@@ -8,23 +8,15 @@ import backLogo from "../../../../Images/Icon back.svg";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 
-const ArticlePageDetalis= () => {
+const ArticlePageDetalis = () => {
   return (
     <>
       <Navbar />
-      <div className="container py-4 text-light">
-        <div
-          className="row mb-3"
-          style={{ marginTop: window.innerWidth < 768 ? "25%" : "7%" }}
-        >
-          <div
-            className="col-md-5 col-12 p-3 rounded mb-3 mb-md-0"
-            style={{ backgroundColor: "#202130", marginRight: "10px" }}
-          >
-            <div className="d-flex justify-content-end align-items-center">
-              <span className="text-light ms-2" style={{ marginRight: "5px" }}>
-                2025، يناير 30
-              </span>
+      <div className="container container-custom">
+        <div className="row mb-3 article-header ml-3">
+          <div className="col-md-5 col-12 article-box article-box-right">
+            <div className="date-icons">
+              <span>2025، يناير 30</span>
               <img
                 src={logo188}
                 alt="Logo 1"
@@ -38,7 +30,7 @@ const ArticlePageDetalis= () => {
                 style={{ width: "20px" }}
               />
             </div>
-            <div className="d-flex justify-content-between align-items-center mt-2">
+            <div className="back-link">
               <img
                 src={backLogo}
                 alt="Back Logo"
@@ -48,21 +40,21 @@ const ArticlePageDetalis= () => {
               <span>العودة للمقالات</span>
             </div>
           </div>
-          <div
-            className="col-md-6 col-12 p-3 rounded mt-2 mt-md-0"
-            style={{ backgroundColor: "#202130" }}
-          >
-            <h2 className="text-light">خدمة العملاء والاهتمام بالعميل</h2>
+          <div className="col-md-6 col-12 article-title">
+            <h2>خدمة العملاء والاهتمام بالعميل</h2>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-6 order-md-2">
-            <img src={ph1} className="img-fluid rounded" alt="Main Visual" />
+        <div className="row ml-3">
+          <div className="col-md-7 order-md-2 main-image-container ">
+            <img
+              src={ph1}
+              className="img-fluid main-image rounded"
+              alt="Main Visual"
+              style={{ marginLeft: "15%" }}
+            />
           </div>
-          <div className="col-md-6 order-md-1" style={{ fontSize: "20px" }}>
-            <p
-              style={{ width: "100%", fontWeight: "bold", lineHeight: "40px" }}
-            >
+          <div className="col-md-5 order-md-1">
+            <p className="article-text">
               قد تمر عليك بعض المشاكل من العميل ويجب التعامل معها بشكل جيد حتى
               تتجنب بعض المشاكل وتكسبها لما فيه المصلحة بما يتماشى مع أهدافك.
               يمكن أن يشعر المستهلك بعدم الرضا بغض النظر إن كان منتجك أو خدمتك
@@ -74,22 +66,15 @@ const ArticlePageDetalis= () => {
           </div>
         </div>
         <div className="row mt-3 flex-column-reverse flex-md-row">
-          <div className="col-md-6 mb-3 mb-md-0">
+          <div className="col-md-5 mb-3 mb-md-0 secondary-image-container">
             <img
               src={ph2}
-              className="img-fluid rounded"
+              className="img-fluid secondary-image rounded"
               alt="Secondary Visual"
-              style={{
-                marginLeft: "auto",
-                marginRight: "auto",
-                display: "block",
-              }}
             />
           </div>
-          <div className="col-md-6" style={{ fontSize: "20px" }}>
-            <p
-              style={{ width: "100%", fontWeight: "bold", lineHeight: "40px" }}
-            >
+          <div className="col-md-7">
+            <p className="article-text">
               قد تمر عليك بعض المشاكل من العميل ويجب التعامل معها بشكل جيد حتى
               تتجنب بعض المشاكل وتكسبها لما فيه المصلحة بما يتماشى مع أهدافك.
               يمكن أن يشعر المستهلك بعدم الرضا بغض النظر إن كان منتجك أو خدمتك
@@ -99,6 +84,23 @@ const ArticlePageDetalis= () => {
               لمتعاملهم دعمهم واكتساب ثقتهم.
             </p>
           </div>
+        </div>
+
+        <div className="d-flex flex-column-reverse d-md-none text-center">
+          <p className="article-text">
+            قد تمر عليك بعض المشاكل من العميل ويجب التعامل معها بشكل جيد حتى
+            تتجنب بعض المشاكل وتكسبها لما فيه المصلحة بما يتماشى مع أهدافك. يمكن
+            أن يشعر المستهلك بعدم الرضا بغض النظر إن كان منتجك أو خدمتك بشكل
+            رائع، لذلك يكون من المهم جدًا فهم المنتج أو الخدمة بشكل جيد والتصور
+            وتوضيح رؤية العلامة التجارية والقيادة بطريقة احترافية. لذلك تقوم
+            الشركات الناجحة باختيار موظفيها بعناية بحيث يقدمون لمتعاملهم دعمهم
+            واكتساب ثقتهم.
+          </p>
+          <img
+            src={ph1}
+            className="img-fluid main-image rounded"
+            alt="Main Visual"
+          />
         </div>
       </div>
       <Footer />

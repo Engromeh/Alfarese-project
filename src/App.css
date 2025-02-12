@@ -214,7 +214,8 @@ input::placeholder {
 .pricing-subtitle {
   font-size: 24px;
   font-family: "Cairo";
-
+  width: 75%;
+  margin-bottom: 10%;
   color: #b0b0b0;
 }
 
@@ -700,14 +701,14 @@ input::placeholder {
   overflow: hidden;
 }
 .hero-image {
-  position: relative; /* لضمان أنها فوق الخلفية */
-  z-index: 2; /* أعلى من الخلفية */
+  position: relative; 
+  
+  z-index: 2; 
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 
-/* الخلفية الذهبية */
 .hero-bg-gold {
   position: absolute;
   top: -50px;
@@ -726,16 +727,139 @@ input::placeholder {
   width: 350px;
   height: 350px;
   background: url("/src/Images/BACKGROUND2.svg") no-repeat center/contain;
-  z-index: 1; /* أقل من الصور */
+  z-index: 1; 
   opacity: 0.8;
 }
 
 
-/* تعديل صور المنتجات */
 .hero-image {
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .liinfooter{
   padding-bottom: 10px;
+}
+
+
+/*ArticlePageDetalis*/
+.container-custom {
+  padding-top: 4rem;
+  color: white;
+
+}
+
+.article-header {
+  margin-top: 3%;
+  margin-left: 7%;
+}
+
+@media (max-width: 768px) {
+  .article-header {
+    margin-top: 25%;
+    margin-left: 0;
+  }
+}
+
+.article-box {
+  background-color: #202130;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.article-box-right {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .article-box-right {
+    margin-right: 0;
+  }
+}
+
+.date-icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.date-icons span {
+  margin-right: 5px;
+  color: white;
+}
+
+.back-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.article-title {
+  text-align: center;
+  background-color: #202130;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.main-image-container {
+  text-align: center;
+}
+
+.main-image {
+  max-width: 100%;
+}
+
+
+.article-text {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  font-family: "Cairo", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .article-text {
+    width: 700px;
+  }
+}
+
+.secondary-image-container {
+  text-align: center;
+}
+
+.secondary-image {
+  max-width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  .responsive-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+/*content form */
+.custom-placeholder{
+
+  border: none !important;
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+  font-size: 20px;
+  color: #B0B0B0;
+
+}
+
+/* Sectioneplan */
+.titel-plan{
+  font-size: 40px;
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+
 }

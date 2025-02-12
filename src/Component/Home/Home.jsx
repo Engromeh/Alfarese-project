@@ -24,6 +24,7 @@ const Home = () => {
  <Sectioneplan />
  <TeamSlider />
  <ContactForm />
+ 
         <Footer />
     </>
   )

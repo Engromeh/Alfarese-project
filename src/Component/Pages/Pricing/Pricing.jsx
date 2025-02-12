@@ -16,7 +16,8 @@ const Pricing = () => {
         <Row className="align-items-center mb-4 text-white">
           <Col md={6} sm={12} className="text-start">
             <h2 className="pricing-subtitle">
-              خطط تسعير تناسب عملك في كل مرحلة من مراحل النمو على منصتنا (يومي - شهري - سنوي).
+              خطط تسعير تناسب عملك في كل مرحلة من مراحل النمو على منصتنا (يومي -
+              شهري - سنوي).
             </h2>
           </Col>
           <Col md={6} sm={12} className="text-end mt-4">
@@ -24,14 +25,17 @@ const Pricing = () => {
           </Col>
         </Row>
 
-        <div className="pricing d-flex justify-content-start flex-wrap mb-4" style={{ fontSize: "38px" ,fontFamily: "Cairo"  }}>
+        <div
+          className="pricing d-flex justify-content-start flex-wrap "
+          style={{ fontSize: "38px", fontFamily: "Cairo" }}
+        >
           {["يومي", "شهري", "سنوي"].map((option) => (
             <Button
               key={option}
-              variant={active === option ? "warning" : "dark"} 
+              variant={active === option ? "warning" : "dark"}
               className={`toggle-btn ${active === option ? "active" : ""}`}
               style={{ fontWeight: "bold" }}
-              onClick={() => setActive(option)} 
+              onClick={() => setActive(option)}
             >
               {option}
             </Button>
@@ -60,18 +64,32 @@ const Pricing = () => {
             },
           ].map((plan, index) => (
             <Col key={index} xs={12} sm={6} md={4} className="mb-4 d-flex">
-              <Card className={`pricing-card flex-fill ${plan.title === "مميز" ? "featured" : ""}`}>
+              <Card
+                className={`pricing-card flex-fill ${
+                  plan.title === "مميز" ? "featured" : ""
+                }`}
+              >
                 <Card.Body>
                   <Card.Title className="plan-title">{plan.title}</Card.Title>
                   <Card.Text className="plan-price">{plan.price}</Card.Text>
-                  <Card.Text className="plan-duration" style={{ fontSize: "30px" ,fontFamily: "Cairo"  }}>
+                  <Card.Text
+                    className="plan-duration"
+                    style={{ fontSize: "30px", fontFamily: "Cairo" }}
+                  >
                     لكل شهر | {plan.services} خدمات
                   </Card.Text>
                   <ul className="plan-features text-start ps-0">
                     {plan.features.map((enabled, idx) => (
                       <li key={idx} className="d-flex align-items-center">
-                        <FaCheckCircle style={{ color: enabled ? "#F4CFAB" : "#D9D9D933" }} />
-                        <span className="ms-2" style={{ fontSize: "20px" ,fontFamily: "Cairo"  }}>ميزة {idx + 1}</span>
+                        <FaCheckCircle
+                          style={{ color: enabled ? "#F4CFAB" : "#D9D9D933" }}
+                        />
+                        <span
+                          className="ms-2"
+                          style={{ fontSize: "20px", fontFamily: "Cairo" }}
+                        >
+                          ميزة {idx + 1}
+                        </span>
                       </li>
                     ))}
                   </ul>

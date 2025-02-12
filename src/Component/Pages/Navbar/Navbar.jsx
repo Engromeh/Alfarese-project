@@ -29,7 +29,11 @@ const Navbar = () => {
         >
           <ul className="navbar-nav text-center me-auto mb-2 mb-lg-0 gap-5 p-0">
             <li className="nav-item">
-              <Link className="nav-link text-white"  to={"/ArticlePagesshow"} style={{fontFamily:"Cairo" , fontSize:"24px"}}>
+              <Link
+                className="nav-link text-white"
+                to={"/ArticlePagesshow"}
+                style={{ fontFamily: "Cairo", fontSize: "24px" }}
+              >
                 المقالات
               </Link>
             </li>
@@ -42,7 +46,7 @@ const Navbar = () => {
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style={{fontFamily:"Cairo" , fontSize:"24px"}}
+                style={{ fontFamily: "Cairo", fontSize: "24px" }}
               >
                 الخدمات
               </a>
@@ -66,22 +70,38 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link text-white" to={"/Ourwork"}  style={{fontFamily:"Cairo" , fontSize:"24px"}}>
+              <Link
+                className="nav-link text-white"
+                to={"/Ourwork"}
+                style={{ fontFamily: "Cairo", fontSize: "24px" }}
+              >
                 أعمالنا
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#"  style={{fontFamily:"Cairo" , fontSize:"24px"}}>
+              <a
+                className="nav-link text-white"
+                href="#"
+                style={{ fontFamily: "Cairo", fontSize: "24px" }}
+              >
                 تواصل معنا
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#"  style={{fontFamily:"Cairo" , fontSize:"24px"}}>
+              <a
+                className="nav-link text-white"
+                href="#"
+                style={{ fontFamily: "Cairo", fontSize: "24px" }}
+              >
                 احصل على عرض السعر
               </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to={"/"}  style={{fontFamily:"Cairo" , fontSize:"24px"}}>
+              <Link
+                className="nav-link text-white"
+                to={"/"}
+                style={{ fontFamily: "Cairo", fontSize: "24px" }}
+              >
                 الرئيسية
               </Link>
             </li>

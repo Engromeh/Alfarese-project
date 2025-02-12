@@ -14,11 +14,17 @@ const Improve = () => {
             <div className="col-md-6 text-end">
               <p
                 className="text"
-                style={{ color: "#D9D9D9", fontSize: "32px" , fontFamily: "Cairo"}}
+                style={{
+                  color: "#D9D9D9",
+                  fontSize: "32px",
+                  fontFamily: "Cairo",
+                  width: "60%",
+                  marginLeft: "35%",
+                }}
               >
-                نقدم استراتيجيات تسويقية بسيطة نعمل كواجهة واحدة توفر لشركتك
-                فريق تسويق محترف، خبرات متقدمة وموارد للظهور المستمر الذي يساهم
-                في تحقيق تأثير إيجابي على عملك.
+                نقدم حلول تسويقية متقدمة ومتكاملة، تهدف إلى تحقيق أهدافك وتحقيق
+                استدامة النجاح ، حيث نسعى جاهدين لفهم أهداف نشاط عميلنا أولا ،
+                ثم يتم إتخاذ جميع القرارات مع وضع هذه الأهداف في الإعتبار.
               </p>
             </div>
 
@@ -26,7 +32,8 @@ const Improve = () => {
               <h2
                 style={{
                   fontWeight: "700px",
-                 fontSize: "77px" , fontFamily: "Cairo",
+                  fontSize: "77px",
+                  fontFamily: "Cairo",
                   fontWeight: "bold",
                 }}
               >
