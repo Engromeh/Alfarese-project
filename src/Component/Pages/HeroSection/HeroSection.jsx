@@ -10,18 +10,31 @@ const HeroSection = () => {
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
+  const images = [
+    { src: group1, alt: "التسويق الرقمي" },
+    { src: group3, alt: "استراتيجية التسويق" },
+    { src: group2, alt: "تطوير العلامة التجارية" },
+  ];
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   return (
     <>
       <section className="hero text-center py-5">
+        <div className="hero-bg-gold"></div>
+        <div className="hero-bg-blue"></div>
         <div>
-          <h1 className="text-white fw-bold" style={{ marginTop: "100px" }}>
+          <h1
+            className="text-white fw-bold"
+            style={{ marginTop: "100px", fontFamily: "Cairo" , fontSize:"72px" }}
+          >
             شركة الفارس للتسويق الالكتروني
           </h1>
-          <p className="lead text-white">
-            هو فن بناء العلاقات وصناعة التأثير. نقدم استراتيجيات مبتكرة لتعزيز
-            علامتك التجارية وتحقيق النجاح. ابدأ اليوم واجعل أفكارك تصل لعملائك
-            بفعالية.
+          <p className="lead text-white" style={{ fontFamily: "Manrope" , fontSize:"24px" , color:"#D9D9D9" }}>
+            نؤمن في شركة الفارس بأن التسويق الرقمى ليس مجرد إعلانات وإحصائيات ،
+            نحن<br/>
+           نعتمد علي أسلوب مبتكر وتقديم تجارب غير مسبوقة ، نسعي لتطوير
+           <br/>
+            استراتيجيات تسويقية تُجسد هوية علامتك التجارية وتُلامس مشاعر عملائك
           </p>
           <div className="d-flex justify-content-center align-items-center gap-3 mt-4 flex-wrap">
             <button
@@ -34,6 +47,7 @@ const HeroSection = () => {
                 fontWeight: "bold",
                 width: "150px",
                 height: "56px",
+                fontFamily:"Cairo" , fontSize:"31px"
               }}
             >
               ابدأ الآن
@@ -42,7 +56,7 @@ const HeroSection = () => {
             <div className="d-flex align-items-center">
               <p
                 className="custom-btn fw-bold d-flex align-items-center"
-                style={{ color: "white", fontSize: "20px", cursor: "pointer" }}
+                style={{ color: "white", fontFamily:"Cairo" , fontSize:"31px", cursor: "pointer" }}
                 onClick={handleShow}
               >
                 <svg
@@ -111,12 +125,14 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="row mt-5">
+          <div className="row mt-3">
             <div className="col-md-4">
               <img
                 src={group1}
                 className="card-img-top hero-image"
                 alt="التسويق الرقمي"
+                style={{width: "70%" ,
+    marginLeft: "45%"}}
               />
             </div>
             <div className="col-md-4">
@@ -124,6 +140,7 @@ const HeroSection = () => {
                 src={group3}
                 className="card-img-top hero-image"
                 alt="استراتيجية التسويق"
+                style={{width:"70%" ,marginLeft: "16%"}}
               />
             </div>
             <div className="col-md-4">
@@ -131,6 +148,7 @@ const HeroSection = () => {
                 src={group2}
                 className="card-img-top hero-image"
                 alt="تطوير العلامة التجارية"
+                style={{width:"70%" , marginRight: "40%"}}
               />
             </div>
           </div>
@@ -138,21 +156,20 @@ const HeroSection = () => {
       </section>
 
       <Modal show={showModal} onHide={handleClose} centered>
-  <Modal.Body>
-    <div className="d-flex justify-content-end">
-      <Button variant="danger" onClick={handleClose}>
-        إغلاق
-      </Button>
-    </div>
-    <div className="d-flex justify-content-center">
-      <video width="90%" height="300px" controls>
-        <source src={vide} type="video/mp4" />
-        متصفحك لا يدعم تشغيل الفيديو.
-      </video>
-    </div>
-  </Modal.Body>
-</Modal>
-
+        <Modal.Body>
+          <div className="d-flex justify-content-end">
+            <Button variant="danger" onClick={handleClose}>
+              إغلاق
+            </Button>
+          </div>
+          <div className="d-flex justify-content-center">
+            <video width="90%" height="300px" controls>
+              <source src={vide} type="video/mp4" />
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+          </div>
+        </Modal.Body>
+      </Modal>
     </>
   );
 };

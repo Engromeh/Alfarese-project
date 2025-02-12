@@ -4,6 +4,8 @@ import plan from "../../../Images/Group 168.svg";
 
 const ContactForm = () => {
   return (
+    <div style={{ backgroundColor: "#151723" }}> 
+
     <Container fluid className="p-4" style={{ color: "white" }}>
       <Row>
         <Col
@@ -21,8 +23,8 @@ const ContactForm = () => {
                   <Form.Control
                     type="text"
                     className="custom-placeholder"
-                    placeholder="الاسم الكامل"
-                    style={{ border: "none" }}
+                    placeholder=" اسم شركتك"
+                    style={{ border: "none" , direction:"rtl" , fontFamily: "Cairo" , fontSize:"20px" , color:"#B0B0B0" }}
                   />
                 </Form.Group>
               </Col>
@@ -31,29 +33,20 @@ const ContactForm = () => {
                   <Form.Control
                     type="text"
                     className="custom-placeholder"
-                    placeholder="اسم شركتك"
-                    style={{ border: "none" }}
+                    placeholder="الاسم الكامل"
+                    style={{ border: "none" , direction:"rtl" , fontFamily: "Cairo" , fontSize:"20px" , color:"#B0B0B0" }}
                   />
                 </Form.Group>
               </Col>
             </Row>
 
             <Row>
-              <Col md={6}>
-                <Form.Group className="mb-3">
-                  <Form.Control
-                    type="text"
-                    className="custom-placeholder"
-                    placeholder="رقم الهاتف"
-                    style={{ border: "none" }}
-                  />
-                </Form.Group>
-              </Col>
+           
               <Col md={6}>
                 <Dropdown className="mb-3 w-100">
                   <Dropdown.Toggle
                     className="dropdown-custom w-100"
-                    style={{ border: "none" }}
+                    style={{ border: "none", direction:"rtl" , fontFamily: "Cairo" , fontSize:"20px" , color:"#B0B0B0" }}
                   >
                     نوع الخدمة
                   </Dropdown.Toggle>
@@ -63,6 +56,16 @@ const ContactForm = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </Col>
+              <Col md={6}>
+                <Form.Group className="mb-3">
+                  <Form.Control
+                    type="text"
+                    className="custom-placeholder"
+                    placeholder="رقم الهاتف"
+                    style={{ border: "none" , direction:"rtl" , fontFamily: "Cairo" , fontSize:"20px" , color:"#B0B0B0"}}
+                  />
+                </Form.Group>
+              </Col>
             </Row>
 
             <Form.Group className="mb-3">
@@ -71,17 +74,18 @@ const ContactForm = () => {
                 rows={3}
                 className="custom-placeholder"
                 placeholder="اكتب رسالتك هنا..."
-                style={{ border: "none" }}
+                style={{ border: "none" , direction:"rtl" , fontFamily: "Cairo" , fontSize:"20px" , color:"#B0B0B0"}}
               />
             </Form.Group>
 
-            <Button className="custom-button w-100" style={{ border: "none" }}>
+            <Button className="custom-button w-100" style={{ border: "none" , direction:"rtl" , fontFamily: "Cairo" , fontSize:"20px" , color:"#B0B0B0" }}>
               اطلب الخدمة
             </Button>
           </Form>
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 

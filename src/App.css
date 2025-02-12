@@ -1,9 +1,8 @@
 #root {
-  /* max-width: 1280px; */
   margin: 0 auto;
   background-color: #151723;
   width: 100%;
-  height: 100%;
+  height:auto;
 }
 * {
   margin: 0;
@@ -207,12 +206,15 @@ input::placeholder {
 /*pricing*/
 
 .pricing-title {
-  font-size: 24px;
+  font-size: 77px;
+ font-family: "Cairo";
   font-weight: bold;
 }
 
 .pricing-subtitle {
-  font-size: 30px;
+  font-size: 24px;
+  font-family: "Cairo";
+
   color: #b0b0b0;
 }
 
@@ -254,13 +256,17 @@ input::placeholder {
 }
 
 .plan-title {
-  font-size: 20px;
+  font-size: 40px;
+  font-family: "Cairo";
+
   font-weight: bold;
 }
 
 .plan-price {
-  font-size: 40px;
+  font-size: 77px;
   font-weight: bold;
+  font-family: "Cairo";
+
   color: #fff;
 }
 
@@ -580,9 +586,9 @@ input::placeholder {
 
 .team-image {
   width: 400px;
-  height: 286px;
-  margin-top: 41%;
-  top: 20%;
+  height: 288px;
+  margin-top: 36%;
+  margin-right: 44px
 }
 
 .team-bg {
@@ -683,4 +689,53 @@ input::placeholder {
 .swiper-slide-active .slide-item {
   background: linear-gradient(90deg, #2D2E39, #b39c81);
   color: white;
+}
+
+
+.hero {
+  position: relative;
+  background-color: #151723;
+  padding: 80px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.hero-image {
+  position: relative; /* لضمان أنها فوق الخلفية */
+  z-index: 2; /* أعلى من الخلفية */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* الخلفية الذهبية */
+.hero-bg-gold {
+  position: absolute;
+  top: -50px;
+  left: -125px;
+  width: 300px;
+  height: 300px;
+  background: url("/src/Images/BACKGROUND.svg") no-repeat center/contain;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.hero-bg-blue {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 350px;
+  height: 350px;
+  background: url("/src/Images/BACKGROUND2.svg") no-repeat center/contain;
+  z-index: 1; /* أقل من الصور */
+  opacity: 0.8;
+}
+
+
+/* تعديل صور المنتجات */
+.hero-image {
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.liinfooter{
+  padding-bottom: 10px;
 }

@@ -157,7 +157,7 @@ const CompaneyDetailes = () => {
             </div>
           </div>
         </div>
-        <Slider />
+      <Slider />
       </div>
       <Footer />
     </>

@@ -24,8 +24,8 @@ const TeamSlider = () => {
       className="text-center my-5 position-relative w-100"
       style={{ backgroundColor: "#171a28" }}
     >
-      <h2 className="text-white mb-3">فريق العمل</h2>
-      <p style={{ color: "#D9D9D9" }}>
+      <h2 className="text-white mb-3" style={{ fontSize: "37px" ,fontFamily: "Cairo" , fontWeight:"bold"  }}>فريق العمل</h2>
+      <p style={{ color: "#D9D9D9" , fontSize: "17px" ,fontFamily: "Cairo" }}>
         الفارس المصدر المثالي لكل ما يتعلق بالتسويق الذكي والأعمال، نحن نقدم لك
         فرصة استثنائية لاكتساب نجاح خبير لأعمالك في عالم التسويق
       </p>
@@ -71,9 +71,9 @@ const TeamSlider = () => {
                     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
                   }}
                 >
-                  <div className="d-flex align-items-center justify-content-between px-3">
+                  <div className="d-flex align-items-center justify-content-between ">
                     <h5 className="fw-bold mb-0 text-white">{member.name}</h5>
-                    <div className="d-flex" style={{ color: "#B08D57" }}>
+                    <div className="d-flex" style={{ color: "#F4CFAB" }}>
                       {[...Array(member.rating)].map((_, i) => (
                         <FaStar key={i} />
                       ))}

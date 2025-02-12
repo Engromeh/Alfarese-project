@@ -14,7 +14,7 @@ const Improve = () => {
             <div className="col-md-6 text-end">
               <p
                 className="text"
-                style={{ color: "#D9D9D9", fontSize: "30px" }}
+                style={{ color: "#D9D9D9", fontSize: "32px" , fontFamily: "Cairo"}}
               >
                 نقدم استراتيجيات تسويقية بسيطة نعمل كواجهة واحدة توفر لشركتك
                 فريق تسويق محترف، خبرات متقدمة وموارد للظهور المستمر الذي يساهم
@@ -26,7 +26,7 @@ const Improve = () => {
               <h2
                 style={{
                   fontWeight: "700px",
-                  fontSize: "44px",
+                 fontSize: "77px" , fontFamily: "Cairo",
                   fontWeight: "bold",
                 }}
               >

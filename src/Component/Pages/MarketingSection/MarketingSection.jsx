@@ -4,8 +4,9 @@ import divider from "../../../Images/Line 4.svg";
 
 const MarketingSection = () => {
   return (
+    <div style={{ backgroundColor: "#151723" }}> 
     <section
-      className="container text-light py-5"
+      className="container text-light py-5 w-full"
       style={{ backgroundColor: "#151723" }}
     >
       <div
@@ -18,13 +19,13 @@ const MarketingSection = () => {
         >
           <h2
             className="fw-bold"
-            style={{ fontSize: "2.5rem", lineHeight: "1.4" }}
+            style={{ fontFamily: "Cairo" , fontSize:"77px" }}
           >
             جعل التسويق أكثر من مجرد أداة ترويجية
           </h2>
           <p
             className="mt-3 fs-5"
-            style={{ maxWidth: "600px", lineHeight: "1.8", margin: "0 auto" }}
+            style={{ maxWidth: "600px",  fontFamily: "Cairo" , fontSize:"32px" , color:"#D9D9D9" , margin: "0 auto" }}
           >
             التسويق ليس مجرد أداة ترويجية، بل هو عملية شاملة تهدف إلى فهم
             احتياجات العملاء وتقديم قيمة حقيقية لهم. يساعدك على بناء علامة مع
@@ -35,35 +36,35 @@ const MarketingSection = () => {
           <div className="mt-4 w-100 d-flex flex-column align-items-center align-items-md-start">
             <div
               className="d-flex align-items-center justify-content-center justify-content-md-between flex-wrap gap-3 w-100"
-              style={{ marginRight: "3%" }}
+             
             >
               <div className="text-center">
-                <h4 className="fw-bold" style={{ fontSize: "2.5rem" }}>
-                  +20
+                <h4 className="fw-bold" style={{ fontSize: "77px" ,fontFamily: "Cairo"  }}>
+                  +80
                 </h4>
-                <p className="mb-0 fs-5">سنوات الخبرة</p>
+                <p className="mb-0 fs-5"style={{fontFamily: "Cairo" , fontSize:"32px" , color:"#D9D9D9"}}>جائزة مكتسبة</p>
               </div>
               <img src={divider} alt="divider" style={{ height: "50px" }} />
               <div className="text-center">
-                <h4 className="fw-bold" style={{ fontSize: "2.5rem" }}>
-                  +80
+                <h4 className="fw-bold" style={{ fontSize: "77px" , fontFamily: "Cairo"}}>
+                  +20
                 </h4>
-                <p className="mb-0 fs-5">جائزة مكتسبة</p>
+                <p className="mb-0 fs-5" style={{fontFamily: "Cairo" , fontSize:"32px" , color:"#D9D9D9"}}>سنوات الخبرة</p>
               </div>
             </div>
             <div className="d-flex align-items-center justify-content-center justify-content-md-between flex-wrap gap-3 w-100 mt-4">
               <div className="text-center">
-                <h4 className="fw-bold" style={{ fontSize: "2.5rem" }}>
-                  +460
+                <h4 className="fw-bold" style={{ fontSize: "77px" , fontFamily: "Cairo"}}>
+                  +140
                 </h4>
-                <p className="mb-0 fs-5">المشاريع المنجزة</p>
+                <p className="mb-0 fs-5"style={{fontFamily: "Cairo" , fontSize:"32px" , color:"#D9D9D9"}}>ثقة مكتسبة</p>
               </div>
               <img src={divider} alt="divider" style={{ height: "50px" }} />
               <div className="text-center">
-                <h4 className="fw-bold" style={{ fontSize: "2.5rem" }}>
-                  +140
+                <h4 className="fw-bold" style={{ fontSize: "77px" , fontFamily: "Cairo"}}>
+                  +460
                 </h4>
-                <p className="mb-0 fs-5">ثقة مكتسبة</p>
+                <p className="mb-0 fs-5" style={{fontFamily: "Cairo" , fontSize:"32px" , color:"#D9D9D9"}}>المشاريع المنجزة</p>
               </div>
             </div>
           </div>
@@ -83,6 +84,7 @@ const MarketingSection = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

@@ -19,7 +19,7 @@ const OurWorksPage = () => {
   return (
     <>
     <div className="" style={{ backgroundColor: "#151723" }}>
-  
+    <Slider />
       <div className="container p-5">
         <div
           className="row m-0 gy-3 gx-4 justify-content-center px-sm-1 py-3 px-md-5 "

@@ -24,7 +24,7 @@ const Pricing = () => {
           </Col>
         </Row>
 
-        <div className="pricing d-flex justify-content-start flex-wrap mb-4">
+        <div className="pricing d-flex justify-content-start flex-wrap mb-4" style={{ fontSize: "38px" ,fontFamily: "Cairo"  }}>
           {["يومي", "شهري", "سنوي"].map((option) => (
             <Button
               key={option}
@@ -64,14 +64,14 @@ const Pricing = () => {
                 <Card.Body>
                   <Card.Title className="plan-title">{plan.title}</Card.Title>
                   <Card.Text className="plan-price">{plan.price}</Card.Text>
-                  <Card.Text className="plan-duration">
+                  <Card.Text className="plan-duration" style={{ fontSize: "30px" ,fontFamily: "Cairo"  }}>
                     لكل شهر | {plan.services} خدمات
                   </Card.Text>
                   <ul className="plan-features text-start ps-0">
                     {plan.features.map((enabled, idx) => (
                       <li key={idx} className="d-flex align-items-center">
                         <FaCheckCircle style={{ color: enabled ? "#F4CFAB" : "#D9D9D933" }} />
-                        <span className="ms-2">ميزة {idx + 1}</span>
+                        <span className="ms-2" style={{ fontSize: "20px" ,fontFamily: "Cairo"  }}>ميزة {idx + 1}</span>
                       </li>
                     ))}
                   </ul>

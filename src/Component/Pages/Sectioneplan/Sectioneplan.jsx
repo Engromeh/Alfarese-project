@@ -3,6 +3,8 @@ import planphoto from "../../../Images/freepik__the-style-is-candid-image-photog
 
 const Sectioneplan = () => {
   return (
+    <div style={{ backgroundColor: "#151723" }}> 
+
     <div className="container my-5 text-white text-end">
       <div className="row align-items-center">
         <div className="col-md-6">
@@ -16,7 +18,8 @@ const Sectioneplan = () => {
           <h2
             className="fw-bold text-break"
             style={{
-              fontSize: "65px",
+              fontSize: "40px"
+              ,fontFamily: "Cairo" ,
               fontWeight: "bold",
             }}
           >
@@ -46,6 +49,7 @@ const Sectioneplan = () => {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 };
