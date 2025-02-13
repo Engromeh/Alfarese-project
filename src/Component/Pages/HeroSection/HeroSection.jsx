@@ -1,3 +1,7 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, FreeMode } from "swiper/modules";
 import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import group1 from "../../../Images/Mask group (1).png";
@@ -25,17 +29,15 @@ const HeroSection = () => {
           <h1
             className="text-white fw-bold"
             style={{
-              marginTop: "100px",
               fontFamily: "Cairo",
               fontSize: "72px",
             }}
           >
-            شركة الفارس للتسويق الالكتروني
+            شركة الفارس للتسويق الإلكترونى
           </h1>
           <p
             className="lead text-white"
             style={{
-              fontFamily: "Manrope",
               fontSize: "24px",
               color: "#D9D9D9",
             }}
@@ -47,13 +49,13 @@ const HeroSection = () => {
             <br />
             استراتيجيات تسويقية تُجسد هوية علامتك التجارية وتُلامس مشاعر عملائك
           </p>
-          <div className="d-flex justify-content-center align-items-center gap-3 mt-4 flex-wrap">
+          <div className="d-flex button-container justify-content-center align-items-center gap-3 mt-4 flex-wrap">
             <button
               className="customee-btn"
               style={{
                 backgroundColor: "#F4CFAB",
                 borderRadius: "25px",
-                padding: "8px 16px",
+
                 textAlign: "center",
                 fontWeight: "bold",
                 width: "150px",
@@ -62,7 +64,7 @@ const HeroSection = () => {
                 fontSize: "31px",
               }}
             >
-              ابدأ الآن
+              ابدا الان
             </button>
 
             <div className="d-flex align-items-center">
@@ -142,7 +144,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="row mt-3">
+          <div className="row mt-3 d-none d-md-flex">
             <div className="col-md-4">
               <img
                 src={group1}
@@ -167,6 +169,49 @@ const HeroSection = () => {
                 style={{ width: "70%", marginRight: "40%" }}
               />
             </div>
+          </div>
+          <div className="d-md-none mt-2">
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={"auto"} // Allows partial slides to be visible
+              loop={true} // Enables infinite scrolling
+              centeredSlides={true} // Centers the active slide
+              pagination={{ clickable: true }}
+              freeMode={true} // Allows smooth movement
+              modules={[Pagination, FreeMode]}
+              className="custom-swiper"
+            >
+              <SwiperSlide style={{width:"fit-content", margin:"0 5px"}}>
+                
+                  <img
+                    src={group1}
+                    className="card-img-top hero-image"
+                    alt="التسويق الرقمي"
+                    style={{
+                      width: "309px",
+                      display: "block",
+                    
+                    }}
+                  />
+                
+              </SwiperSlide>
+              <SwiperSlide style={{width:"fit-content", margin:"0 5px"}}>
+                <img
+                  src={group3}
+                  className="card-img-top hero-image"
+                  alt="استراتيجية التسويق"
+                  style={{ width: "309px", display: "block" }}
+                />
+              </SwiperSlide>
+              <SwiperSlide style={{width:"fit-content", margin:"0 5px"}}>
+                <img
+                  src={group2}
+                  className="card-img-top hero-image"
+                  alt="تطوير العلامة التجارية"
+                  style={{ width: "309px", display: "block" }}
+                />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </section>

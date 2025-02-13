@@ -10,7 +10,7 @@ const MarketingSection = () => {
         style={{ backgroundColor: "#151723" }}
       >
         <div
-          className="row align-items-center flex-column flex-md-row text-md-end text-center text-md-start"
+          className="row  align-items-center  flex-md-row text-md-end text-center text-md-start marking-section"
           style={{ marginLeft: "10%" }}
         >
           <div
@@ -59,7 +59,7 @@ const MarketingSection = () => {
                     جائزة مكتسبة
                   </p>
                 </div>
-                <img src={divider} alt="divider" style={{ height: "50px" }} />
+                <img src={divider} alt="divider" style={{ height: "50px" }}  className="marketing-divider"/>
                 <div className="text-center">
                   <h4
                     className="fw-bold"
@@ -98,7 +98,7 @@ const MarketingSection = () => {
                     ثقة مكتسبة
                   </p>
                 </div>
-                <img src={divider} alt="divider" style={{ height: "50px" }} />
+                <img src={divider} alt="divider" style={{ height: "50px" }} className="marketing-divider"/>
                 <div className="text-center">
                   <h4
                     className="fw-bold"
@@ -125,7 +125,7 @@ const MarketingSection = () => {
             <img
               src={markating}
               alt="Marketing Presentation"
-              className="img-fluid rounded shadow"
+              className="img-fluid rounded shadow marketing-img"
               style={{
                 height: "620px",
                 borderRadius: "10px",

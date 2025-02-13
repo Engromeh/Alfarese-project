@@ -1,4 +1,3 @@
-import React from "react";
 import impr1 from "../../../Images/nahid photo (1).svg";
 import impr2 from "../../../Images/nahid photo (2).svg";
 import impr3 from "../../../Images/nahid photo.svg";
@@ -6,11 +5,11 @@ const Improve = () => {
   return (
     <>
       <div
-        className="container-fluid  text-white py-5 w-100"
+        className="container-fluid  text-white py-0 py-md-5 w-100 improve-section "
         style={{ backgroundColor: "#171a28" }}
       >
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-center improve-container">
             <div className="col-md-6 text-end">
               <p
                 className="text"
@@ -28,10 +27,9 @@ const Improve = () => {
               </p>
             </div>
 
-            <div className="col-md-6 text-end">
+            <div className="col-md-6 text-end position-relative">
               <h2
                 style={{
-                  fontWeight: "700px",
                   fontSize: "77px",
                   fontFamily: "Cairo",
                   fontWeight: "bold",
@@ -39,13 +37,13 @@ const Improve = () => {
               >
                 نحن نسعى لجعل عملك ينمو بشكل أسرع من أي وقت مضى
               </h2>
-              <div className="d-flex align-items-center mt-3">
+              <div className="d-flex align-items-center mt-3 improve-images">
                 <div className="d-flex profile-images">
                   <img src={impr1} alt="impr 1" className="profile-img" />
                   <img src={impr2} alt="impr 2" className="profile-img" />
                   <img src={impr3} alt="impr 3" className="profile-img" />
                 </div>
-                <button>
+                <button className="rounded-5">
                   <svg
                     width="97"
                     height="27"
